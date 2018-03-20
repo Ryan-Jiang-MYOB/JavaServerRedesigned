@@ -1,0 +1,42 @@
+package Channel;
+
+import CustomException.InvalidRequestException;
+import Model.IRequest;
+import Model.IResponse;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.OutputStream;
+import java.net.Socket;
+
+public class HTTPChannel implements IChannel {
+    private Socket _clientSocket;
+    private RequestParser _requestParser;
+    private ResponseParser _responseParser;
+
+    public HTTPChannel(Socket clientSocket, RequestParser requestParser, ResponseParser responseParser) {
+        _clientSocket = clientSocket;
+        _requestParser = requestParser;
+        _responseParser = responseParser;
+    }
+
+    public IRequest fetch() throws IOException {
+        BufferedReader _reader = new BufferedReader(new InputStreamReader(_clientSocket.getInputStream()));
+        try {
+            return _requestParser.parseRequest(_reader);
+        } catch (InvalidRequestException e) {
+            System.err.println("Invalid Request - Empty Post scan received");
+            return null;
+        }
+    }
+
+    public String send(IResponse response) throws IOException {
+        String responseString = _responseParser.parseResponse(response);
+        OutputStream outputStream = _clientSocket.getOutputStream();
+        outputStream.write(responseString.getBytes());
+        System.out.println(outputStream);
+        outputStream.close();
+        return outputStream.toString();
+    }
+}
