@@ -1,21 +1,16 @@
 import Channel.HTTPChannel;
-import Channel.HTTPRequestParser;
-import Channel.HTTPResponseParser;
-import Channel.IChannel;
-import Model.Enum.HTTPResponseStatus;
-import Model.HTTPResponse;
-import Model.IRequest;
-import Model.IResponse;
+import Worker.HTTPRequestParser;
+import Worker.HTTPResponseParser;
+import Channel.Channel;
+import Model.Request;
 
 import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
-import java.util.LinkedHashMap;
-import java.util.Map;
 
 public class JavaServerEntry {
 //
-//    public static IResponse getValidResponse() {
+//    public static Response getValidResponse() {
 //        final String validHTTPProtocol = "HTTP/1.1";
 //        final HTTPResponseStatus validHTTPStatus = HTTPResponseStatus.OK;
 //        final Map validHeadersMap = new LinkedHashMap();
@@ -32,8 +27,8 @@ public class JavaServerEntry {
             ServerSocket serverSocket = new ServerSocket(8080);
             while(true) {
                 Socket clientSocket = serverSocket.accept();
-                IChannel channel = new HTTPChannel(clientSocket, new HTTPRequestParser(), new HTTPResponseParser());
-                IRequest request = channel.fetch();
+                Channel channel = new HTTPChannel(clientSocket, new HTTPRequestParser(), new HTTPResponseParser());
+                Request request = channel.fetch();
                 if (request != null) {
                     System.out.println(request.getBody());
                 }

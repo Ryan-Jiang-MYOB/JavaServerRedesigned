@@ -5,7 +5,7 @@ import Model.Enum.RequestType;
 import java.net.URI;
 import java.util.Map;
 
-public class HTTPRequest implements IRequest {
+public class HTTPRequest implements Request {
     private RequestType type;
     private URI path;
     private String protocol;

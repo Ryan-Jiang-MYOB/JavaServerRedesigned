@@ -3,8 +3,12 @@ import CustomException.InvalidRequestException;
 import Mocks.MockClientSocket;
 import Mocks.MockResponseFactory;
 import Model.Enum.HTTPRequestType;
-import Model.IRequest;
-import Model.IResponse;
+import Model.Request;
+import Model.Response;
+import Worker.HTTPRequestParser;
+import Worker.HTTPResponseParser;
+import Worker.RequestParser;
+import Worker.ResponseParser;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -35,29 +39,29 @@ public class RequestChannelTest {
 
     @Test
     public void fetchingDummyRequestFromClientSocket() throws IOException, InvalidRequestException {
-        IChannel iChannel = new HTTPChannel(fakeClient, requestParser, responseParser);
-        IRequest request = iChannel.fetch();
+        Channel channel = new HTTPChannel(fakeClient, requestParser, responseParser);
+        Request request = channel.fetch();
         Assert.assertNotNull(request);
     }
 
     @Test
     public void fetchingValidRequestFromChannel() throws IOException, InvalidRequestException {
-        IChannel iChannel = new HTTPChannel(fakeClient, requestParser, responseParser);
-        IRequest request = iChannel.fetch();
+        Channel channel = new HTTPChannel(fakeClient, requestParser, responseParser);
+        Request request = channel.fetch();
         Assert.assertEquals(HTTPRequestType.POST, request.getType());
         Assert.assertEquals(dummyBody, request.getBody());
     }
 
     @Test
     public void responseBeingSentToOutputStream() throws IOException {
-        IChannel iChannel = new HTTPChannel(fakeClient, requestParser, responseParser);
-        IResponse response = new MockResponseFactory().getValidResponse();
+        Channel channel = new HTTPChannel(fakeClient, requestParser, responseParser);
+        Response response = new MockResponseFactory().getValidResponse();
         String expectedResult = "HTTP/1.1 200 OK\n" +
                 "Content-Type: application/json\n" +
                 "content-length: 24\n" +
                 "\n" +
                 dummyBody;
-        String sendResult = iChannel.send(response);
+        String sendResult = channel.send(response);
         Assert.assertEquals(expectedResult, sendResult);
     }
 }

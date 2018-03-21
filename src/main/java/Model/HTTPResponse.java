@@ -5,7 +5,7 @@ import Model.Enum.ResponseStatus;
 
 import java.util.Map;
 
-public class HTTPResponse implements IResponse {
+public class HTTPResponse implements Response {
     private String _protocol;
     private HTTPResponseStatus _status;
     private Map<String, String> _headers;

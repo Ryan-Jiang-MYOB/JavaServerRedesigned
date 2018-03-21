@@ -1,14 +1,13 @@
-package Channel;
+package Worker;
 
-import Model.IResponse;
+import Model.Response;
 
-import java.io.OutputStream;
 import java.util.Map;
 
 public class HTTPResponseParser implements ResponseParser {
 
     @Override
-    public String parseResponse(IResponse response) {
+    public String parseResponse(Response response) {
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append(parseResponseStatusLine(response));
         stringBuilder.append("\n");
@@ -19,7 +18,7 @@ public class HTTPResponseParser implements ResponseParser {
         return stringBuilder.toString();
     }
 
-    private String parseResponseStatusLine(IResponse response) {
+    private String parseResponseStatusLine(Response response) {
         String statusLine = response.get_protocol() +
                 " " +
                 String.valueOf(response.get_status().getStatusCode()) +
@@ -28,7 +27,7 @@ public class HTTPResponseParser implements ResponseParser {
         return statusLine;
     }
 
-    private String parseResponseHeaders(IResponse response) {
+    private String parseResponseHeaders(Response response) {
         StringBuilder headersString = new StringBuilder();
         Map<String, String> headersMap = response.get_headers();
         for (String key:response.get_headers().keySet()) {

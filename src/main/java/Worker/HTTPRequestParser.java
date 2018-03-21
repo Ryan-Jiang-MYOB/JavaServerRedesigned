@@ -1,16 +1,16 @@
-package Channel;
+package Worker;
 
 import CustomException.InvalidRequestException;
 import CustomException.UnknownRequestTypeException;
 import Model.Enum.HTTPRequestType;
 import Model.Enum.RequestType;
 import Model.HTTPRequest;
-import Model.IRequest;
+import Model.Request;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.net.URI;
-import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
 
 public class HTTPRequestParser implements RequestParser {
@@ -19,7 +19,7 @@ public class HTTPRequestParser implements RequestParser {
     public static final String CONTENT_LENGTH = "content-length";
 
     @Override
-    public IRequest parseRequest(BufferedReader reader) throws IOException, InvalidRequestException {
+    public Request parseRequest(BufferedReader reader) throws IOException, InvalidRequestException {
         if (reader.ready()) {
             String [] requestFields = readRequestLine(reader, REQUEST_LINE_LENGTH);
 
@@ -36,7 +36,7 @@ public class HTTPRequestParser implements RequestParser {
 
     private RequestType parseRequestType(String rawType) throws UnknownRequestTypeException {
         for (HTTPRequestType type: HTTPRequestType.values()) {
-            if (type.getRequestCode().equals(rawType)) {
+            if (type.getRequestTypeText().equals(rawType)) {
                 return type;
             }
         }
@@ -66,7 +66,7 @@ public class HTTPRequestParser implements RequestParser {
 
     private Map<String, String> readRequestHeaders(BufferedReader reader) throws InvalidRequestException, IOException {
         String line;
-        Map<String, String> headers = new HashMap<>();
+        Map<String, String> headers = new LinkedHashMap<>();
         line = reader.readLine();
         while (!line.isEmpty()) {
             String[] headerTuple = line.split(": ", 2);

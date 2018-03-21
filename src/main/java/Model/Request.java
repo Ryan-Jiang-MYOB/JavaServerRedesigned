@@ -4,7 +4,7 @@ import Model.Enum.RequestType;
 
 import java.net.URI;
 
-public interface IRequest {
+public interface Request {
     RequestType getType();
 
     URI getPath();

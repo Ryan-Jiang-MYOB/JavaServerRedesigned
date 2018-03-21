@@ -2,7 +2,7 @@ package Mocks;
 
 import Model.Enum.HTTPResponseStatus;
 import Model.HTTPResponse;
-import Model.IResponse;
+import Model.Response;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -17,7 +17,7 @@ public class MockResponseFactory {
             "\t\"age\": 25\n" +
             "}";
 
-    public IResponse getValidResponse() {
+    public Response getValidResponse() {
         validHeadersMap.put("Content-Type", "application/json");
         validHeadersMap.put("content-length", "24");
         return new HTTPResponse(validHTTPProtocol, validHTTPStatus, validHeadersMap, validBody);

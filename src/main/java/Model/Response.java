@@ -4,7 +4,7 @@ import Model.Enum.ResponseStatus;
 
 import java.util.Map;
 
-public interface IResponse {
+public interface Response {
     ResponseStatus get_status();
 
     String get_protocol();

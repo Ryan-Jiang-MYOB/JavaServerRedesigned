@@ -1,8 +1,7 @@
-import Channel.HTTPResponseParser;
-import Channel.ResponseParser;
+import Model.Response;
+import Worker.HTTPResponseParser;
+import Worker.ResponseParser;
 import Mocks.MockResponseFactory;
-import Model.HTTPResponse;
-import Model.IResponse;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -21,14 +20,14 @@ public class ResponseParserTest {
 
     @Test
     public void parseResponseShouldReturnString() {
-        IResponse response = factory.getValidResponse();
+        Response response = factory.getValidResponse();
         String responseString = parser.parseResponse(response);
         Assert.assertNotNull(responseString);
     }
 
     @Test
     public void parseResponseShouldReturnCorrectStatus() {
-        IResponse response = factory.getValidResponse();
+        Response response = factory.getValidResponse();
         String responseString = parser.parseResponse(response);
         Scanner responseScanner = new Scanner(responseString);
         String statusLine = responseScanner.nextLine();
@@ -40,7 +39,7 @@ public class ResponseParserTest {
 
     @Test
     public void parseResponseShouldReturnCorrectHeaders() {
-        IResponse response = factory.getValidResponse();
+        Response response = factory.getValidResponse();
         String responseString = parser.parseResponse(response);
         Scanner responseScanner = new Scanner(responseString);
         responseScanner.nextLine();
@@ -56,7 +55,7 @@ public class ResponseParserTest {
 
     @Test
     public void parseResponseShouldReturnCorrectBody() {
-        IResponse response = factory.getValidResponse();
+        Response response = factory.getValidResponse();
         String responseString = parser.parseResponse(response);
         String[] responseSplitLines = responseString.split("\n");
         int blankLineIndex = 0;

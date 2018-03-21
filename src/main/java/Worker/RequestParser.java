@@ -1,11 +1,11 @@
-package Channel;
+package Worker;
 
 import CustomException.InvalidRequestException;
-import Model.IRequest;
+import Model.Request;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 
 public interface RequestParser {
-    IRequest parseRequest(BufferedReader reader) throws IOException, InvalidRequestException;
+    Request parseRequest(BufferedReader reader) throws IOException, InvalidRequestException;
 }

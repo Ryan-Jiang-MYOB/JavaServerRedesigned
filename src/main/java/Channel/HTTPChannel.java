@@ -1,8 +1,10 @@
 package Channel;
 
 import CustomException.InvalidRequestException;
-import Model.IRequest;
-import Model.IResponse;
+import Model.Request;
+import Model.Response;
+import Worker.RequestParser;
+import Worker.ResponseParser;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -10,7 +12,7 @@ import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.net.Socket;
 
-public class HTTPChannel implements IChannel {
+public class HTTPChannel implements Channel {
     private Socket _clientSocket;
     private RequestParser _requestParser;
     private ResponseParser _responseParser;
@@ -21,7 +23,7 @@ public class HTTPChannel implements IChannel {
         _responseParser = responseParser;
     }
 
-    public IRequest fetch() throws IOException {
+    public Request fetch() throws IOException {
         BufferedReader _reader = new BufferedReader(new InputStreamReader(_clientSocket.getInputStream()));
         try {
             return _requestParser.parseRequest(_reader);
@@ -31,7 +33,7 @@ public class HTTPChannel implements IChannel {
         }
     }
 
-    public String send(IResponse response) throws IOException {
+    public String send(Response response) throws IOException {
         String responseString = _responseParser.parseResponse(response);
         OutputStream outputStream = _clientSocket.getOutputStream();
         outputStream.write(responseString.getBytes());

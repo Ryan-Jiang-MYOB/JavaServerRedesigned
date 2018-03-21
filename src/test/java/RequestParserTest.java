@@ -1,9 +1,9 @@
-import Channel.HTTPRequestParser;
-import Channel.RequestParser;
+import Worker.HTTPRequestParser;
+import Worker.RequestParser;
 import CustomException.InvalidRequestException;
 import Mocks.MockClientSocket;
 import Model.Enum.HTTPRequestType;
-import Model.IRequest;
+import Model.Request;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -32,7 +32,7 @@ public class RequestParserTest {
         RequestParser parser = new HTTPRequestParser();
         Socket clientSocket = new MockClientSocket(requestLine, headers, dummyBody);
         BufferedReader reader = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
-        IRequest request = parser.parseRequest(reader);
+        Request request = parser.parseRequest(reader);
         Assert.assertEquals(HTTPRequestType.POST, request.getType());
         Assert.assertEquals("/path", request.getPath().toString());
         Assert.assertEquals("localhost:8888", request.getHeader("Host"));

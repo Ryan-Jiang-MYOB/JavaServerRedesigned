@@ -2,13 +2,13 @@ package Mocks;
 
 import Model.Enum.HTTPRequestType;
 import Model.Enum.RequestType;
-import Model.IRequest;
+import Model.Request;
 
 import java.net.URI;
 import java.util.HashMap;
 import java.util.Map;
 
-public class ValidHTTPRequest implements IRequest {
+public class ValidHTTPRequest implements Request {
     private RequestType type;
     private URI path;
     private String protocol;
