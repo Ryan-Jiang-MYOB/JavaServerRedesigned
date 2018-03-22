@@ -1,8 +1,8 @@
 import Channel.*;
 import CustomException.InvalidRequestException;
-import Mocks.MockClientSocket;
-import Mocks.MockResponseFactory;
+import Mocks.*;
 import Model.Enum.HTTPRequestType;
+import Model.HTTPRequest;
 import Model.Request;
 import Model.Response;
 import Worker.HTTPRequestParser;
@@ -38,30 +38,58 @@ public class RequestChannelTest {
     }
 
     @Test
-    public void fetchingDummyRequestFromClientSocket() throws IOException, InvalidRequestException {
+    public void fetchingDummyRequestFromClientSocket() throws IOException {
         Channel channel = new HTTPChannel(fakeClient, requestParser, responseParser);
         Request request = channel.fetch();
         Assert.assertNotNull(request);
     }
 
     @Test
-    public void fetchingValidRequestFromChannel() throws IOException, InvalidRequestException {
-        Channel channel = new HTTPChannel(fakeClient, requestParser, responseParser);
+    public void fetchingWithValidRequestAndGetParserCalledCorrectly() throws IOException {
+        MockSpyValidRequestParser mockSpyValidRequestParser = new MockSpyValidRequestParser();
+        Channel channel = new HTTPChannel(fakeClient, mockSpyValidRequestParser, responseParser);
         Request request = channel.fetch();
-        Assert.assertEquals(HTTPRequestType.POST, request.getType());
-        Assert.assertEquals(dummyBody, request.getBody());
+        Assert.assertEquals(1, mockSpyValidRequestParser.parseRequestCalled);
+        Assert.assertNotNull(request);
+        Assert.assertTrue(request instanceof HTTPRequest);
     }
 
     @Test
-    public void responseBeingSentToOutputStream() throws IOException {
-        Channel channel = new HTTPChannel(fakeClient, requestParser, responseParser);
-        Response response = new MockResponseFactory().getValidResponse();
-        String expectedResult = "HTTP/1.1 200 OK\n" +
-                "Content-Type: application/json\n" +
-                "content-length: 24\n" +
-                "\n" +
-                dummyBody;
-        String sendResult = channel.send(response);
-        Assert.assertEquals(expectedResult, sendResult);
+    public void fetchingWithInvalidRequestAndGettingNullWithOneParserCall() throws IOException {
+        MockSpyInvalidRequestParser mockSpyInvalidRequestParser = new MockSpyInvalidRequestParser();
+        Channel channel = new HTTPChannel(fakeClient, mockSpyInvalidRequestParser, responseParser);
+        Request request = channel.fetch();
+        Assert.assertEquals(1, mockSpyInvalidRequestParser.parseRequestCalled);
+        Assert.assertNull(request);
     }
+
+    @Test (expected = IOException.class)
+    public void fetchingWithUnavailableSocket() throws IOException {
+        MockSpyInvalidRequestParser mockSpyInvalidRequestParser = new MockSpyInvalidRequestParser();
+        Channel channel = new HTTPChannel(new MockInvalidClientSocket(), mockSpyInvalidRequestParser, responseParser);
+        Request request = channel.fetch();
+        Assert.assertEquals(0, mockSpyInvalidRequestParser.parseRequestCalled);
+        Assert.assertNull(request);
+    }
+
+//    @Test
+//    public void fetchingValidRequestFromChannel() throws IOException, InvalidRequestException {
+//        Channel channel = new HTTPChannel(fakeClient, requestParser, responseParser);
+//        Request request = channel.fetch();
+//        Assert.assertEquals(HTTPRequestType.POST, request.getType());
+//        Assert.assertEquals(dummyBody, request.getBody());
+//    }
+//
+//    @Test
+//    public void responseBeingSentToOutputStream() throws IOException {
+//        Channel channel = new HTTPChannel(fakeClient, requestParser, responseParser);
+//        Response response = new MockResponseFactory().getValidResponse();
+//        String expectedResult = "HTTP/1.1 200 OK\n" +
+//                "Content-Type: application/json\n" +
+//                "content-length: 24\n" +
+//                "\n" +
+//                dummyBody;
+//        String sendResult = channel.send(response);
+//        Assert.assertEquals(expectedResult, sendResult);
+//    }
 }

@@ -50,7 +50,7 @@ public class ResponseParserTest {
         Assert.assertEquals("Content-Type", headerLine_1[0]);
         Assert.assertEquals("application/json", headerLine_1[1]);
         Assert.assertEquals("content-length", headerLine_2[0]);
-        Assert.assertEquals("31", headerLine_2[1]);
+        Assert.assertEquals("24", headerLine_2[1]);
     }
 
     @Test

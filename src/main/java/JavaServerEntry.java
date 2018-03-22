@@ -1,4 +1,7 @@
 import Channel.HTTPChannel;
+import Model.Enum.HTTPResponseStatus;
+import Model.HTTPResponse;
+import Model.Response;
 import Worker.HTTPRequestParser;
 import Worker.HTTPResponseParser;
 import Channel.Channel;
@@ -7,9 +10,11 @@ import Model.Request;
 import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.util.LinkedHashMap;
+import java.util.Map;
 
 public class JavaServerEntry {
-//
+
 //    public static Response getValidResponse() {
 //        final String validHTTPProtocol = "HTTP/1.1";
 //        final HTTPResponseStatus validHTTPStatus = HTTPResponseStatus.OK;

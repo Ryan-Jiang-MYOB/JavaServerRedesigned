@@ -28,7 +28,7 @@ public class HTTPChannel implements Channel {
         try {
             return _requestParser.parseRequest(_reader);
         } catch (InvalidRequestException e) {
-            System.err.println("Invalid Request - Empty Post scan received");
+            System.err.println(e.getMessage());
             return null;
         }
     }
@@ -37,7 +37,6 @@ public class HTTPChannel implements Channel {
         String responseString = _responseParser.parseResponse(response);
         OutputStream outputStream = _clientSocket.getOutputStream();
         outputStream.write(responseString.getBytes());
-        System.out.println(outputStream);
         outputStream.close();
         return outputStream.toString();
     }

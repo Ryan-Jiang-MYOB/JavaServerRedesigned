@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="3" failures="0" name="RequestChannelTest" time="0.001" errors="0" skipped="0">
+<testsuite tests="3" failures="0" name="RequestChannelTest" time="0.002" errors="0" skipped="0">
   <properties>
     <property name="idea.version" value="2017.3.5"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -60,7 +60,7 @@
     <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="RequestChannelTest" name="fetchingDummyRequestFromClientSocket" time="0"/>
-  <testcase classname="RequestChannelTest" name="fetchingValidRequestFromChannel" time="0.001"/>
-  <testcase classname="RequestChannelTest" name="responseBeingSentToOutputStream" time="0"/>
+  <testcase classname="RequestChannelTest" name="fetchingDummyRequestFromClientSocket" time="0.001"/>
+  <testcase classname="RequestChannelTest" name="fetchingValidRequestFromChannel" time="0"/>
+  <testcase classname="RequestChannelTest" name="responseBeingSentToOutputStream" time="0.001"/>
 </testsuite>

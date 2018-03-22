@@ -12,7 +12,6 @@ public class MockClientSocket extends Socket {
         builder.append(headers);
         builder.append(body);
         _input = builder.toString();
-        System.out.println(_input);
     }
 
     @Override

@@ -11,24 +11,51 @@ import java.util.Map;
 
 public class MockRequestFactory {
     public final String validPostProtocol = "HTTP/1.1";
-    public final URI validPostURI = new URI("/path");
+    public final URI validLogURI = new URI("/log");
+    public final URI validSiteURI = new URI("/site");
+    public final URI unavailableURI = new URI("/random");
     public final String validPostHeaders = "Host: localhost:8888\n" +
             "Content-Type: application/json\n" +
             "Cache-Control: no-cache\n" +
             "content-length: 24\n" +
             "Postman-Token: 41a40579-8368-4f89-9b2b-b02c4475fafd\n" +
             "\n";
-    public final String validPostDummyBody = "{\"name\":\"ryan\",\"age\":25}";
+    private final String validPostDummyBody = "{\"name\":\"ryan\",\"age\":25}";
 
     public MockRequestFactory() throws URISyntaxException {
     }
 
-    public Request getValidPostRequest() {
+    public Request getValidRequest(HTTPRequestType type, URI passedURI) {
+        Map<String, String> headersMap;
+        switch (type) {
+            case POST:
+                headersMap = getValidPostHeader();
+            case GET:
+                headersMap = getValidGetHeader();
+            default:
+                headersMap = getValidGetHeader();
+        }
+        return new HTTPRequest(type, passedURI, validPostProtocol, headersMap, validPostDummyBody);
+    }
+
+    public Request getPostRequestWithUnavailableURI() {
+        Map<String, String> headersMap = getValidPostHeader();
+        return new HTTPRequest(HTTPRequestType.POST, unavailableURI, validPostProtocol, headersMap, validPostDummyBody);
+    }
+
+    private Map<String, String> getValidPostHeader() {
         Map<String, String> headersMap = new LinkedHashMap<>();
         headersMap.put("Content-Type", "application/json");
         headersMap.put("Cache-Control", "no-cache");
         headersMap.put("content-length", "24");
         headersMap.put("Postman-Token", "41a40579-8368-4f89-9b2b-b02c4475fafd");
-        return new HTTPRequest(HTTPRequestType.POST, validPostURI, validPostProtocol, headersMap, validPostDummyBody);
+        return headersMap;
+    }
+
+    private Map<String, String> getValidGetHeader() {
+        Map<String, String> headersMap = new LinkedHashMap<>();
+        headersMap.put("Cache-Control", "no-cache");
+        headersMap.put("Postman-Token", "41a40579-8368-4f89-9b2b-b02c4475fafd");
+        return headersMap;
     }
 }
