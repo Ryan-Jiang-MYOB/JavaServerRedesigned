@@ -10,17 +10,22 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 
 public class MockRequestFactory {
-    public final String validPostProtocol = "HTTP/1.1";
+    public final String validHTTPProtocol = "HTTP/1.1";
     public final URI validLogURI = new URI("/log");
-    public final URI validSiteURI = new URI("/site");
     public final URI unavailableURI = new URI("/random");
-    public final String validPostHeaders = "Host: localhost:8888\n" +
+    public final String validPostHeaderString = "Host: localhost:8888\n" +
             "Content-Type: application/json\n" +
             "Cache-Control: no-cache\n" +
             "content-length: 24\n" +
             "Postman-Token: 41a40579-8368-4f89-9b2b-b02c4475fafd\n" +
             "\n";
-    private final String validPostDummyBody = "{\"name\":\"ryan\",\"age\":25}";
+    public final String invalidPostHeaderStringWithWrongLength = "Host: localhost:8888\n" +
+            "Content-Type: application/json\n" +
+            "Cache-Control: no-cache\n" +
+            "content-length: 96\n" +
+            "Postman-Token: 41a40579-8368-4f89-9b2b-b02c4475fafd\n" +
+            "\n";
+    public final String validPostDummyBody = "{\"name\":\"ryan\",\"age\":25}";
 
     public MockRequestFactory() throws URISyntaxException {
     }
@@ -35,12 +40,12 @@ public class MockRequestFactory {
             default:
                 headersMap = getValidGetHeader();
         }
-        return new HTTPRequest(type, passedURI, validPostProtocol, headersMap, validPostDummyBody);
+        return new HTTPRequest(type, passedURI, validHTTPProtocol, headersMap, validPostDummyBody);
     }
 
     public Request getPostRequestWithUnavailableURI() {
         Map<String, String> headersMap = getValidPostHeader();
-        return new HTTPRequest(HTTPRequestType.POST, unavailableURI, validPostProtocol, headersMap, validPostDummyBody);
+        return new HTTPRequest(HTTPRequestType.POST, unavailableURI, validHTTPProtocol, headersMap, validPostDummyBody);
     }
 
     private Map<String, String> getValidPostHeader() {

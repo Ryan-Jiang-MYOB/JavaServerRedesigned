@@ -1,10 +1,8 @@
 import Channel.*;
-import CustomException.InvalidRequestException;
 import Mocks.*;
 import Model.Enum.HTTPRequestType;
 import Model.HTTPRequest;
 import Model.Request;
-import Model.Response;
 import Worker.HTTPRequestParser;
 import Worker.HTTPResponseParser;
 import Worker.RequestParser;
@@ -15,23 +13,23 @@ import org.junit.Test;
 
 import java.io.IOException;
 import java.net.Socket;
+import java.net.URISyntaxException;
 
-public class RequestChannelTest {
+public class HTTPChannelTest {
     Socket fakeClient;
     RequestParser requestParser;
     ResponseParser responseParser;
     String dummyBody;
 
     @Before
-    public void setupClient() {
-        String requestLine = "POST /path HTTP/1.1\n";
-        String headers = "Host: localhost:8888\n" +
-                "Content-Type: application/json\n" +
-                "Cache-Control: no-cache\n" +
-                "content-length: 24\n" +
-                "Postman-Token: 41a40579-8368-4f89-9b2b-b02c4475fafd\n" +
-                "\n";
-        dummyBody = "{\"name\":\"ryan\",\"age\":25}";
+    public void setupClient() throws URISyntaxException {
+        MockRequestFactory requestFactory = new MockRequestFactory();
+        String requestLine = HTTPRequestType.POST.getRequestTypeText() + " "
+                + requestFactory.validLogURI.toString() + " "
+                + requestFactory.validHTTPProtocol + "\n";
+        String headers = requestFactory.validPostHeaderString;
+        dummyBody = requestFactory.validPostDummyBody;
+
         fakeClient = new MockClientSocket(requestLine, headers, dummyBody);
         requestParser = new HTTPRequestParser();
         responseParser = new HTTPResponseParser();
@@ -72,24 +70,23 @@ public class RequestChannelTest {
         Assert.assertNull(request);
     }
 
-//    @Test
-//    public void fetchingValidRequestFromChannel() throws IOException, InvalidRequestException {
-//        Channel channel = new HTTPChannel(fakeClient, requestParser, responseParser);
-//        Request request = channel.fetch();
-//        Assert.assertEquals(HTTPRequestType.POST, request.getType());
-//        Assert.assertEquals(dummyBody, request.getBody());
-//    }
-//
-//    @Test
-//    public void responseBeingSentToOutputStream() throws IOException {
-//        Channel channel = new HTTPChannel(fakeClient, requestParser, responseParser);
-//        Response response = new MockResponseFactory().getValidResponse();
-//        String expectedResult = "HTTP/1.1 200 OK\n" +
-//                "Content-Type: application/json\n" +
-//                "content-length: 24\n" +
-//                "\n" +
-//                dummyBody;
-//        String sendResult = channel.send(response);
-//        Assert.assertEquals(expectedResult, sendResult);
-//    }
+    @Test
+    public void sendingResponseToValidSocketShouldReturnTrue() {
+        MockSpyValidResponseParser mockSpyValidResponseParser = new MockSpyValidResponseParser();
+        MockResponseFactory responseFactory = new MockResponseFactory();
+        Channel channel = new HTTPChannel(fakeClient, requestParser, mockSpyValidResponseParser);
+        boolean result = channel.send(responseFactory.getValidResponse());
+        Assert.assertTrue(result);
+        Assert.assertEquals(1, mockSpyValidResponseParser.parseResponseCalled);
+    }
+
+    @Test
+    public void sendingResponseToInvalidSocketShouldReturnFalse() {
+        MockSpyValidResponseParser mockSpyValidResponseParser = new MockSpyValidResponseParser();
+        MockResponseFactory responseFactory = new MockResponseFactory();
+        Channel channel = new HTTPChannel(new MockInvalidClientSocket(), requestParser, mockSpyValidResponseParser);
+        boolean result = channel.send(responseFactory.getValidResponse());
+        Assert.assertFalse(result);
+        Assert.assertEquals(1, mockSpyValidResponseParser.parseResponseCalled);
+    }
 }

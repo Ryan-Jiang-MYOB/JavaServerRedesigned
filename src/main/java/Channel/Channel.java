@@ -10,5 +10,5 @@ import java.io.IOException;
  */
 public interface Channel {
     Request fetch() throws IOException;
-    String send(Response response) throws IOException;
+    boolean send(Response response);
 }

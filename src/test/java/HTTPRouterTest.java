@@ -3,17 +3,16 @@ import Model.Enum.HTTPRequestType;
 import Model.Request;
 import Channel.HTTPRouter;
 import Channel.Router;
-import Server.Controller;
-import Server.LogController;
-import Server.SiteController;
+import Service.Controller;
+import Service.LogService.LogController;
+import Worker.HTTPRequestMapper;
+import Worker.RequestMapper;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
 import java.net.URI;
 import java.net.URISyntaxException;
-import java.util.LinkedHashMap;
-import java.util.Map;
 
 public class HTTPRouterTest {
     private Router router;
@@ -21,10 +20,8 @@ public class HTTPRouterTest {
 
     @Before
     public void setup () throws URISyntaxException {
-        Map<URI, Controller> requestMap = new LinkedHashMap<>();
-        requestMap.put(new URI("/log"), new LogController());
-        requestMap.put(new URI("/site"), new SiteController());
-        router = new HTTPRouter(requestMap);
+        router = new HTTPRouter();
+        router.mapController(new URI("/log"), new LogController());
         requestFactory = new MockRequestFactory();
     }
 
@@ -47,8 +44,5 @@ public class HTTPRouterTest {
         Request request = requestFactory.getValidRequest(HTTPRequestType.GET, requestFactory.validLogURI);
         Controller routingResult = router.routeToController(request);
         Assert.assertTrue(routingResult instanceof LogController);
-        request = requestFactory.getValidRequest(HTTPRequestType.GET, requestFactory.validSiteURI);
-        routingResult = router.routeToController(request);
-        Assert.assertTrue(routingResult instanceof SiteController);
     }
 }

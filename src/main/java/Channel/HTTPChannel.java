@@ -33,11 +33,17 @@ public class HTTPChannel implements Channel {
         }
     }
 
-    public String send(Response response) throws IOException {
-        String responseString = _responseParser.parseResponse(response);
-        OutputStream outputStream = _clientSocket.getOutputStream();
-        outputStream.write(responseString.getBytes());
-        outputStream.close();
-        return outputStream.toString();
+    public boolean send(Response response) {
+        try {
+            String responseString = _responseParser.parseResponseToString(response);
+            OutputStream outputStream = _clientSocket.getOutputStream();
+            outputStream.write(responseString.getBytes());
+            outputStream.close();
+            return true;
+        } catch (IOException e) {
+            System.err.println("Socket I/O Error - Couldn't write to the OutputStream and close the Socket.");
+            System.err.println(e.getMessage());
+            return false;
+        }
     }
 }

@@ -8,7 +8,7 @@ import org.junit.Test;
 
 import java.util.Scanner;
 
-public class ResponseParserTest {
+public class HTTPResponseParserTest {
     ResponseParser parser;
     MockResponseFactory factory;
 
@@ -21,14 +21,14 @@ public class ResponseParserTest {
     @Test
     public void parseResponseShouldReturnString() {
         Response response = factory.getValidResponse();
-        String responseString = parser.parseResponse(response);
+        String responseString = parser.parseResponseToString(response);
         Assert.assertNotNull(responseString);
     }
 
     @Test
     public void parseResponseShouldReturnCorrectStatus() {
         Response response = factory.getValidResponse();
-        String responseString = parser.parseResponse(response);
+        String responseString = parser.parseResponseToString(response);
         Scanner responseScanner = new Scanner(responseString);
         String statusLine = responseScanner.nextLine();
         String[] statusFields = statusLine.split(" ");
@@ -40,7 +40,7 @@ public class ResponseParserTest {
     @Test
     public void parseResponseShouldReturnCorrectHeaders() {
         Response response = factory.getValidResponse();
-        String responseString = parser.parseResponse(response);
+        String responseString = parser.parseResponseToString(response);
         Scanner responseScanner = new Scanner(responseString);
         responseScanner.nextLine();
         String[] headerLine_1 = responseScanner.nextLine().split(": ");
@@ -56,7 +56,7 @@ public class ResponseParserTest {
     @Test
     public void parseResponseShouldReturnCorrectBody() {
         Response response = factory.getValidResponse();
-        String responseString = parser.parseResponse(response);
+        String responseString = parser.parseResponseToString(response);
         String[] responseSplitLines = responseString.split("\n");
         int blankLineIndex = 0;
         for(int i = 0; i < responseSplitLines.length; i ++) {

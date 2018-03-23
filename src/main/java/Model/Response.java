@@ -5,11 +5,13 @@ import Model.Enum.ResponseStatus;
 import java.util.Map;
 
 public interface Response {
-    ResponseStatus get_status();
+    ResponseStatus getStatus();
 
-    String get_protocol();
+    String getProtocol();
 
-    Map<String, String> get_headers();
+    Map<String, String> getHeadersMap();
 
-    String get_body();
+    void add_header(String key, String value);
+
+    String getBody();
 }

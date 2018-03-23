@@ -1,12 +1,10 @@
 package Mocks;
 
-import CustomException.InvalidRequestException;
 import Model.Enum.HTTPRequestType;
 import Model.Request;
 import Worker.HTTPRequestParser;
 
 import java.io.BufferedReader;
-import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
 
@@ -14,9 +12,9 @@ public class MockSpyValidRequestParser extends HTTPRequestParser {
     public int parseRequestCalled = 0;
 
     @Override
-    public Request parseRequest(BufferedReader reader) throws IOException, InvalidRequestException{
+    public Request parseRequest(BufferedReader reader) {
         parseRequestCalled ++;
-        MockRequestFactory requestFactory = null;
+        MockRequestFactory requestFactory;
         try {
             requestFactory = new MockRequestFactory();
             return requestFactory.getValidRequest(HTTPRequestType.GET, new URI("/log"));

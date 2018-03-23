@@ -69,7 +69,7 @@ public class HTTPRequestParser implements RequestParser {
         Map<String, String> headers = new LinkedHashMap<>();
         line = reader.readLine();
         while (!line.isEmpty()) {
-            String[] headerTuple = line.split(": ", 2);
+            String[] headerTuple = line.toLowerCase().split(": ", 2);
             if (headerTuple.length == 2) {
                 headers.put(headerTuple[0], headerTuple[1]);
             } else {

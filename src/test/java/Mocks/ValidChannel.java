@@ -17,7 +17,7 @@ public class ValidChannel implements Channel {
         return new ValidHTTPRequest();
     }
 
-    public String send(Response response) {
-        return "";
+    public boolean send(Response response) {
+        return true;
     }
 }

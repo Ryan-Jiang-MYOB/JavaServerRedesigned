@@ -6,31 +6,40 @@ import Model.Enum.ResponseStatus;
 import java.util.Map;
 
 public class HTTPResponse implements Response {
-    private String _protocol;
-    private HTTPResponseStatus _status;
-    private Map<String, String> _headers;
-    private String _body;
+    private String protocol;
+    private HTTPResponseStatus status;
+    private Map<String, String> headersMap;
+    private String body;
 
-    public HTTPResponse(String _protocol, HTTPResponseStatus _status, Map<String, String> _headers, String _body) {
-        this._protocol = _protocol;
-        this._status = _status;
-        this._headers = _headers;
-        this._body = _body;
+    public HTTPResponse(String protocol, HTTPResponseStatus status, Map<String, String> headersMap, String body) {
+        this.protocol = protocol;
+        this.status = status;
+        this.headersMap = headersMap;
+        this.body = body;
     }
 
-    public String get_protocol() {
-        return _protocol;
+    @Override
+    public ResponseStatus getStatus() {
+        return status;
     }
 
-    public ResponseStatus get_status() {
-        return _status;
+    @Override
+    public String getProtocol() {
+        return protocol;
     }
 
-    public Map<String, String> get_headers() {
-        return _headers;
+    @Override
+    public Map<String, String> getHeadersMap() {
+        return headersMap;
     }
 
-    public String get_body() {
-        return _body;
+    @Override
+    public void add_header(String key, String value) {
+        headersMap.put(key, value);
+    }
+
+    @Override
+    public String getBody() {
+        return body;
     }
 }
