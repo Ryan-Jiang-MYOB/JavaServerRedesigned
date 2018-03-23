@@ -2,66 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4e2ed837-b8d5-4829-bcb9-e5ab2c703c8f" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Service/UnavailableController.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ThreadServer.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Worker/HTTPRequestMapper.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Worker/RequestMapper.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/HTTPLogControllerTest.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/HTTPRequestParserTest.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/Mocks/MockSpyValidResponseParser.java" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Channel/Channel.java" afterPath="$PROJECT_DIR$/src/main/java/Channel/Channel.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Channel/HTTPChannel.java" afterPath="$PROJECT_DIR$/src/main/java/Channel/HTTPChannel.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Channel/HTTPRouter.java" afterPath="$PROJECT_DIR$/src/main/java/Channel/HTTPRouter.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Channel/Router.java" afterPath="$PROJECT_DIR$/src/main/java/Channel/Router.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/JavaServerEntry.java" afterPath="$PROJECT_DIR$/src/main/java/JavaServerEntry.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Enum/HTTPResponseStatus.java" afterPath="$PROJECT_DIR$/src/main/java/Model/Enum/HTTPResponseStatus.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/HTTPResponse.java" afterPath="$PROJECT_DIR$/src/main/java/Model/HTTPResponse.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Response.java" afterPath="$PROJECT_DIR$/src/main/java/Model/Response.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Server/Controller.java" afterPath="$PROJECT_DIR$/src/main/java/Service/Controller.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Server/LogController.java" afterPath="$PROJECT_DIR$/src/main/java/Service/LogService/LogController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Server/SiteController.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Worker/HTTPRequestParser.java" afterPath="$PROJECT_DIR$/src/main/java/Worker/HTTPRequestParser.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Worker/HTTPResponseParser.java" afterPath="$PROJECT_DIR$/src/main/java/Worker/HTTPResponseParser.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Worker/ResponseParser.java" afterPath="$PROJECT_DIR$/src/main/java/Worker/ResponseParser.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/HTTPRouterTest.java" afterPath="$PROJECT_DIR$/src/test/java/HTTPRouterTest.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Mocks/MockClientSocket.java" afterPath="$PROJECT_DIR$/src/test/java/Mocks/MockClientSocket.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Mocks/MockInvalidClientSocket.java" afterPath="$PROJECT_DIR$/src/test/java/Mocks/MockInvalidClientSocket.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Mocks/MockRequestFactory.java" afterPath="$PROJECT_DIR$/src/test/java/Mocks/MockRequestFactory.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Mocks/MockResponseFactory.java" afterPath="$PROJECT_DIR$/src/test/java/Mocks/MockResponseFactory.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Mocks/MockSpyValidRequestParser.java" afterPath="$PROJECT_DIR$/src/test/java/Mocks/MockSpyValidRequestParser.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Mocks/ValidChannel.java" afterPath="$PROJECT_DIR$/src/test/java/Mocks/ValidChannel.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/RequestChannelTest.java" afterPath="$PROJECT_DIR$/src/test/java/HTTPChannelTest.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/RequestParserTest.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ResponseParserTest.java" afterPath="$PROJECT_DIR$/src/test/java/HTTPResponseParserTest.java" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Channel/Channel.class" afterPath="$PROJECT_DIR$/target/classes/Channel/Channel.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Channel/HTTPChannel.class" afterPath="$PROJECT_DIR$/target/classes/Channel/HTTPChannel.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Channel/HTTPRouter.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Channel/Router.class" afterPath="$PROJECT_DIR$/target/classes/Channel/Router.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/JavaServerEntry.class" afterPath="$PROJECT_DIR$/target/classes/JavaServerEntry.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Model/Enum/HTTPResponseStatus.class" afterPath="$PROJECT_DIR$/target/classes/Model/Enum/HTTPResponseStatus.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Model/HTTPResponse.class" afterPath="$PROJECT_DIR$/target/classes/Model/HTTPResponse.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Model/Response.class" afterPath="$PROJECT_DIR$/target/classes/Model/Response.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Server/Controller.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Server/LogController.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Server/SiteController.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Worker/HTTPRequestParser.class" afterPath="$PROJECT_DIR$/target/classes/Worker/HTTPRequestParser.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Worker/HTTPResponseParser.class" afterPath="$PROJECT_DIR$/target/classes/Worker/HTTPResponseParser.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Worker/ResponseParser.class" afterPath="$PROJECT_DIR$/target/classes/Worker/ResponseParser.class" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/HTTPRouterTest.txt" afterPath="$PROJECT_DIR$/target/surefire-reports/HTTPRouterTest.txt" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-HTTPRouterTest.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-HTTPRouterTest.xml" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/HTTPRouterTest.class" afterPath="$PROJECT_DIR$/target/test-classes/HTTPRouterTest.class" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Mocks/MockClientSocket.class" afterPath="$PROJECT_DIR$/target/test-classes/Mocks/MockClientSocket.class" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Mocks/MockInvalidClientSocket.class" afterPath="$PROJECT_DIR$/target/test-classes/Mocks/MockInvalidClientSocket.class" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Mocks/MockRequestFactory$1.class" afterPath="$PROJECT_DIR$/target/test-classes/Mocks/MockRequestFactory$1.class" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Mocks/MockRequestFactory.class" afterPath="$PROJECT_DIR$/target/test-classes/Mocks/MockRequestFactory.class" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Mocks/MockResponseFactory.class" afterPath="$PROJECT_DIR$/target/test-classes/Mocks/MockResponseFactory.class" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Mocks/MockSpyValidRequestParser.class" afterPath="$PROJECT_DIR$/target/test-classes/Mocks/MockSpyValidRequestParser.class" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Mocks/ValidChannel.class" afterPath="$PROJECT_DIR$/target/test-classes/Mocks/ValidChannel.class" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/RequestChannelTest.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/RequestParserTest.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/ResponseParserTest.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ThreadServer.java" afterPath="$PROJECT_DIR$/src/main/java/ThreadServer.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -223,11 +164,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="ThreadServer.java" pinned="false" current-in-tab="false">
+          <file leaf-file-name="ThreadServer.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/ThreadServer.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="409">
-                  <caret line="31" column="74" lean-forward="false" selection-start-line="31" selection-start-column="74" selection-end-line="31" selection-end-column="74" />
+                <state relative-caret-position="645">
+                  <caret line="43" column="52" lean-forward="false" selection-start-line="43" selection-start-column="52" selection-end-line="43" selection-end-column="52" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="e#374#375#0" expanded="true" />
@@ -279,10 +220,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="HTTPResponseParser.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="HTTPResponseParser.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/Worker/HTTPResponseParser.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="449">
+                <state relative-caret-position="349">
                   <caret line="34" column="52" lean-forward="true" selection-start-line="34" selection-start-column="52" selection-end-line="34" selection-end-column="52" />
                   <folding />
                 </state>
@@ -309,11 +250,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="JavaServerEntry.java" pinned="false" current-in-tab="false">
+          <file leaf-file-name="JavaServerEntry.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/JavaServerEntry.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="315">
-                  <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="22" selection-end-column="57" />
+                <state relative-caret-position="270">
+                  <caret line="18" column="25" lean-forward="true" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -369,7 +310,7 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="UnavailableController.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="UnavailableController.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/Service/UnavailableController.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="225">
@@ -483,10 +424,10 @@
         <option value="$PROJECT_DIR$/src/main/java/Channel/HTTPChannel.java" />
         <option value="$PROJECT_DIR$/src/main/java/Worker/HTTPRequestParser.java" />
         <option value="$PROJECT_DIR$/src/main/java/JavaServerEntry.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ThreadServer.java" />
         <option value="$PROJECT_DIR$/src/main/java/Service/UnavailableController.java" />
         <option value="$PROJECT_DIR$/src/main/java/Channel/HTTPRouter.java" />
         <option value="$PROJECT_DIR$/src/main/java/Worker/HTTPResponseParser.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ThreadServer.java" />
       </list>
     </option>
   </component>
@@ -876,7 +817,7 @@
       <updated>1521412848861</updated>
       <workItem from="1521412852653" duration="29422000" />
       <workItem from="1521586075539" duration="19160000" />
-      <workItem from="1521757012351" duration="18353000" />
+      <workItem from="1521757012351" duration="18727000" />
     </task>
     <task id="LOCAL-00001" summary="Finished with Channel and parsers with TDD">
       <created>1521526205853</created>
@@ -921,7 +862,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66935000" />
+    <option name="totallyTimeSpent" value="67309000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -944,7 +885,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952183" sideWeight="0.5042598" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10010649" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21517672" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21517672" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24428274" sideWeight="0.49574015" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1385,16 +1326,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/JavaServerEntry.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="22" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Service/LogService/LogController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -1405,18 +1336,6 @@
             <element signature="e#425#426#0" expanded="true" />
             <element signature="e#735#736#0" expanded="true" />
             <element signature="e#762#763#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ThreadServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="31" column="74" lean-forward="false" selection-start-line="31" selection-start-column="74" selection-end-line="31" selection-end-column="74" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#374#375#0" expanded="true" />
-            <element signature="e#422#423#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1449,9 +1368,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Worker/HTTPResponseParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="449">
+        <state relative-caret-position="349">
           <caret line="34" column="52" lean-forward="true" selection-start-line="34" selection-start-column="52" selection-end-line="34" selection-end-column="52" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/JavaServerEntry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="25" lean-forward="true" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ThreadServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="43" column="52" lean-forward="false" selection-start-line="43" selection-start-column="52" selection-end-line="43" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#374#375#0" expanded="true" />
+            <element signature="e#422#423#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

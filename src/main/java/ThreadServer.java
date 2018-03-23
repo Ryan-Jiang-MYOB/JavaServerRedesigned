@@ -25,19 +25,25 @@ public class ThreadServer implements Runnable {
             try {
                 request = channel.fetch();
                 if (request == null) {
-                System.out.println("Empty Request");
+                    System.out.println("Empty Request");
                     return;
                 }
                 Router router = new HTTPRouter();
                 Controller controller = router.routeToController(request);
                 Response response = controller.doGet(request);
                 channel.send(response);
-                clientSocket.close();
             } catch (IOException e) {
                 System.err.println("Couldn't Establish Service Socket on port: 8080");
                 e.printStackTrace();
             } catch (URISyntaxException e) {
                 e.printStackTrace();
+            } finally {
+                try {
+                    clientSocket.close();
+                    System.out.println("Helloooooooo");
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
             }
         }
     }
