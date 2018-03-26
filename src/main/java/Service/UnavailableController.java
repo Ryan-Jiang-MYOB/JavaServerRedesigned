@@ -25,7 +25,7 @@ public class UnavailableController implements Controller {
         return responseParser.createResponse("HTTP/1.1",
                 HTTPResponseStatus.NOT_FOUND,
                 new HashMap<String, String>(),
-                "Dude the stuff you requested is not there");
+                "404: Dude the stuff you requested is not there");
     }
 
     @Override
@@ -33,6 +33,6 @@ public class UnavailableController implements Controller {
         return responseParser.createResponse("HTTP/1.1",
                 HTTPResponseStatus.NOT_FOUND,
                 new HashMap<String, String>(),
-                "Dude the stuff you requested is not there");
+                "404: Dude the stuff you requested is not there");
     }
 }

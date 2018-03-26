@@ -33,15 +33,11 @@ public class ServerDriver implements Runnable {
                 Response response = controller.handleRequest(request);
                 channel.send(response);
 
-            } catch (IOException e) {
-                System.err.println("Couldn't Establish Service Socket on port: 8080");
-                e.printStackTrace();
-            } catch (URISyntaxException e) {
+            } catch (URISyntaxException | IOException e) {
                 e.printStackTrace();
             } finally {
                 try {
                     clientSocket.close();
-                    System.out.println("socket closed.");
                 } catch (IOException e) {
                     System.err.println("Couldn't Close Socket Connection");
                     e.printStackTrace();

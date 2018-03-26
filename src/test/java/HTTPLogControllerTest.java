@@ -60,7 +60,7 @@ public class HTTPLogControllerTest {
         Request request = requestFactory.getGetRequestWithQuery(requestFactory.validLogURI, queriesMap);
         Response response = logController.handleRequest(request);
         System.out.println(response.getBody());
-        Assert.assertEquals(HTTPResponseStatus.NO_CONTENT, response.getStatus());
+        Assert.assertEquals(HTTPResponseStatus.OK, response.getStatus());
     }
 
     @Test

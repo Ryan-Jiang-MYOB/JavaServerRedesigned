@@ -6,7 +6,7 @@ public class JavaServerEntry {
 
     public static void main(String[] args) {
         try {
-            ServerSocket serverSocket = new ServerSocket(8888);
+            ServerSocket serverSocket = new ServerSocket(8080);
             while(true) {
                 Socket clientSocket = serverSocket.accept();
 

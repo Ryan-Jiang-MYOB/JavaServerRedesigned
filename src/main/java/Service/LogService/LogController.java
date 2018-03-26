@@ -53,23 +53,23 @@ public class LogController implements Controller {
         String id = request.getQuery("id");
         Response response;
 
-        // When ID is not provided.
+        // When ID is not provided, return bad request.
         if (id == null || id.isEmpty()) {
-
             response = responseParser.createResponse("HTTP/1.1",
                     HTTPResponseStatus.BAD_REQUEST,
                     new HashMap<String, String>(),
                     "400 Bad Request: Need to provide id as query to GET log.");
+
         } else {
-            System.out.println(id);
             GetLogService getLogService = new GetLogService();
             String logString = getLogService.getLog(id);
-            System.out.println(logString);
+
             if (logString == null) {
                 response = responseParser.createResponse("HTTP/1.1",
                         HTTPResponseStatus.OK,
                         new HashMap<String, String>(),
                         "There's no log matching the given ID.");
+
             } else {
                 response = responseParser.createResponse("HTTP/1.1",
                         HTTPResponseStatus.OK,
