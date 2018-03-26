@@ -1,12 +1,11 @@
+import Channel.HTTPRouter;
+import Channel.Router;
 import Mocks.MockRequestFactory;
 import Model.Enum.HTTPRequestType;
 import Model.Request;
-import Channel.HTTPRouter;
-import Channel.Router;
 import Service.Controller;
 import Service.LogService.LogController;
-import Worker.HTTPRequestMapper;
-import Worker.RequestMapper;
+import Service.UnavailableController;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -33,10 +32,10 @@ public class HTTPRouterTest {
     }
 
     @Test
-    public void routerShouldReturnNullWhenNoServiceAvailable() {
+    public void routerShouldReturnUnavailableControllerWhenNoServiceAvailable() {
         Request request = requestFactory.getPostRequestWithUnavailableURI();
         Controller routingResult = router.routeToController(request);
-        Assert.assertNull(routingResult);
+        Assert.assertTrue(routingResult instanceof UnavailableController);
     }
 
     @Test

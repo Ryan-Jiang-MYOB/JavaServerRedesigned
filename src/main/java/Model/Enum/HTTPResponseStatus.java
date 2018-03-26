@@ -2,6 +2,7 @@ package Model.Enum;
 
 public enum HTTPResponseStatus implements ResponseStatus {
     OK (200, "OK"),
+    NO_CONTENT (204, "No Content"),
     BAD_REQUEST (400, "Bad Request"),
     NOT_FOUND (404, "Not Found"),
     INTERNAL_SERVER_ERROR (500, "Internal Service Error"),

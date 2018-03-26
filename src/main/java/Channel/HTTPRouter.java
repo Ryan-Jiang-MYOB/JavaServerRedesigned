@@ -13,9 +13,10 @@ import java.util.Map;
 public class HTTPRouter implements Router {
     private Map<URI, Controller> requestMap;
 
-    // Should I implement injection here?
     public HTTPRouter() throws URISyntaxException {
         this.requestMap = new LinkedHashMap<>();
+
+        // Request Mapping at instantiation, is this the right way?
         mapController(new URI("/log"), new LogController());
     }
 

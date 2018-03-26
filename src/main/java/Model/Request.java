@@ -3,6 +3,7 @@ package Model;
 import Model.Enum.RequestType;
 
 import java.net.URI;
+import java.util.Map;
 
 public interface Request {
     RequestType getType();
@@ -12,4 +13,6 @@ public interface Request {
     String getBody();
 
     String getHeader(String headerKey);
+
+    String getQuery(String key);
 }

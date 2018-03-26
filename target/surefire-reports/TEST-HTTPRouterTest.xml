@@ -60,7 +60,7 @@
     <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="HTTPRouterTest" name="routerShouldReturnNullWhenNoServiceAvailable" time="0.001"/>
+  <testcase classname="HTTPRouterTest" name="routerShouldReturnUnavailableControllerWhenNoServiceAvailable" time="0.001"/>
   <testcase classname="HTTPRouterTest" name="routerFunctionShouldReturnNotNull" time="0"/>
   <testcase classname="HTTPRouterTest" name="routerShouldReturnCorrectControllerWhenAvailable" time="0"/>
 </testsuite>

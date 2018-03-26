@@ -9,10 +9,10 @@ import java.io.IOException;
 import java.net.Socket;
 import java.net.URISyntaxException;
 
-public class ThreadServer implements Runnable {
+public class ServerDriver implements Runnable {
     private Socket clientSocket;
 
-    public ThreadServer(Socket clientSocket) {
+    public ServerDriver(Socket clientSocket) {
         this.clientSocket = clientSocket;
     }
 
@@ -25,13 +25,14 @@ public class ThreadServer implements Runnable {
             try {
                 request = channel.fetch();
                 if (request == null) {
-                    System.out.println("Empty Request");
                     return;
                 }
+
                 Router router = new HTTPRouter();
                 Controller controller = router.routeToController(request);
-                Response response = controller.doGet(request);
+                Response response = controller.handleRequest(request);
                 channel.send(response);
+
             } catch (IOException e) {
                 System.err.println("Couldn't Establish Service Socket on port: 8080");
                 e.printStackTrace();
@@ -40,8 +41,9 @@ public class ThreadServer implements Runnable {
             } finally {
                 try {
                     clientSocket.close();
-                    System.out.println("Helloooooooo");
+                    System.out.println("socket closed.");
                 } catch (IOException e) {
+                    System.err.println("Couldn't Close Socket Connection");
                     e.printStackTrace();
                 }
             }

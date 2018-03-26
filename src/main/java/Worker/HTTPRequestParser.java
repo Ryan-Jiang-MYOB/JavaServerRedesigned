@@ -22,13 +22,18 @@ public class HTTPRequestParser implements RequestParser {
     public Request parseRequest(BufferedReader reader) throws IOException, InvalidRequestException {
         if (reader.ready()) {
             String [] requestFields = readRequestLine(reader, REQUEST_LINE_LENGTH);
+            String requestPath = requestFields[1];
 
             RequestType requestType = parseRequestType(requestFields[0]);
-            URI requestURI = parseRequestURI(requestFields[1]);
             Map<String, String> headers = readRequestHeaders(reader);
+            URI requestURI = parseRequestURI(requestPath);
             String body = readRequestBody(reader, headers);
 
-            return new HTTPRequest(requestType, requestURI, requestFields[2], headers, body);
+            //Optional Query
+            Map<String, String> queriesMap = parseRequestQuery(requestPath);
+            Request request = new HTTPRequest(requestType, requestURI, requestFields[2], headers, body, queriesMap);
+
+            return request;
         } else {
             throw new InvalidRequestException("Empty InputStream");
         }
@@ -44,12 +49,31 @@ public class HTTPRequestParser implements RequestParser {
     }
 
     private URI parseRequestURI(String path) throws InvalidRequestException {
+        String uri = path.contains("?") ? path.split("\\?")[0] : path;
+
         try {
-            return URI.create(path);
+            return URI.create(uri);
         } catch (NullPointerException | IllegalArgumentException e) {
             e.printStackTrace();
-            throw new InvalidRequestException("Invalid Request Line - Incorrect reqeust URI.");
+            throw new InvalidRequestException("Invalid Request Line - Incorrect request URI.");
         }
+    }
+
+    private Map<String, String> parseRequestQuery(String requestLine){
+        Map<String, String> queriesMap = new LinkedHashMap<>();
+        if (requestLine.contains("?")) {
+            try {
+                String queryString = requestLine.split("\\?")[1];
+                String[] queries = queryString.split("&");
+                for (String query : queries) {
+                    String[] queryKeyValuePair = query.split("=");
+                    queriesMap.put(queryKeyValuePair[0], queryKeyValuePair[1]);
+                }
+            } catch (ArrayIndexOutOfBoundsException e) {
+
+            }
+        }
+        return queriesMap;
     }
 
     // Should I expose to public to be able to test them??? -- No, if don't need it elsewhere, you leave it private.

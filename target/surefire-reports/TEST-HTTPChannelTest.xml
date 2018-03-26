@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="6" failures="0" name="HTTPChannelTest" time="0.011" errors="0" skipped="0">
+<testsuite tests="6" failures="0" name="HTTPChannelTest" time="0.017" errors="0" skipped="0">
   <properties>
     <property name="idea.version" value="2017.3.5"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -60,10 +60,10 @@
     <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="HTTPChannelTest" name="fetchingDummyRequestFromClientSocket" time="0.004"/>
-  <testcase classname="HTTPChannelTest" name="sendingResponseToValidSocketShouldReturnTrue" time="0.004"/>
+  <testcase classname="HTTPChannelTest" name="fetchingDummyRequestFromClientSocket" time="0.013"/>
+  <testcase classname="HTTPChannelTest" name="sendingResponseToValidSocketShouldReturnTrue" time="0.002"/>
   <testcase classname="HTTPChannelTest" name="fetchingWithValidRequestAndGetParserCalledCorrectly" time="0.001"/>
-  <testcase classname="HTTPChannelTest" name="fetchingWithInvalidRequestAndGettingNullWithOneParserCall" time="0.002"/>
+  <testcase classname="HTTPChannelTest" name="fetchingWithInvalidRequestAndGettingNullWithOneParserCall" time="0.001"/>
   <testcase classname="HTTPChannelTest" name="sendingResponseToInvalidSocketShouldReturnFalse" time="0"/>
   <testcase classname="HTTPChannelTest" name="fetchingWithUnavailableSocket" time="0"/>
 </testsuite>

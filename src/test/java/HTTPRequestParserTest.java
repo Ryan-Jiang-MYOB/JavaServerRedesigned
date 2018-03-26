@@ -32,6 +32,7 @@ public class HTTPRequestParserTest {
                 + requestFactory.validHTTPProtocol + "\n";
         invalidRequestLineWithTwoFields = HTTPRequestType.POST.getRequestTypeText() + " "
                 + requestFactory.validLogURI.toString() + "\n";
+
         validPostHeaders = requestFactory.validPostHeaderString;
         validDummyBody = requestFactory.validPostDummyBody;
 
@@ -48,6 +49,17 @@ public class HTTPRequestParserTest {
         Assert.assertEquals("/log", request.getPath().toString());
         Assert.assertEquals("localhost:8888", request.getHeader("host"));
         Assert.assertEquals(validDummyBody.replaceAll("\\s", ""), request.getBody());
+    }
+
+    @Test
+    public void correctlyParsingGETRequestWithInlineQuery() throws IOException, InvalidRequestException {
+
+        Socket clientSocket = new MockClientSocket("GET /log?id=12345 HTTP/1.1\n", requestFactory.validGetHeaderString, "");
+        BufferedReader reader = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
+        Request request = parser.parseRequest(reader);
+        Assert.assertEquals(HTTPRequestType.GET, request.getType());
+        Assert.assertEquals("/log", request.getPath().toString());
+        Assert.assertEquals("12345", request.getQuery("id"));
     }
 
     @Test (expected = InvalidRequestException.class)

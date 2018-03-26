@@ -1,10 +1,13 @@
 package Mocks;
 
 import Channel.Channel;
+import Model.Enum.HTTPRequestType;
 import Model.Request;
 import Model.Response;
 
 import java.net.Socket;
+import java.net.URI;
+import java.net.URISyntaxException;
 
 public class ValidChannel implements Channel {
     private Socket clientSocket;
@@ -14,7 +17,14 @@ public class ValidChannel implements Channel {
     }
 
     public Request fetch() {
-        return new ValidHTTPRequest();
+        MockRequestFactory mockRequestFactory = null;
+        try {
+            mockRequestFactory = new MockRequestFactory();
+            return mockRequestFactory.getValidRequest(HTTPRequestType.POST, new URI("log"));
+        } catch (URISyntaxException e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 
     public boolean send(Response response) {
