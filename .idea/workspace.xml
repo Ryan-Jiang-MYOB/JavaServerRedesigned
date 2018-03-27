@@ -2,69 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4e2ed837-b8d5-4829-bcb9-e5ab2c703c8f" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/Dockerfile" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/JavaServerImproved.iml" afterPath="$PROJECT_DIR$/JavaServerImproved.iml" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/JavaServerEntry.java" afterPath="$PROJECT_DIR$/src/main/java/JavaServerEntry.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ServerDriver.java" afterPath="$PROJECT_DIR$/src/main/java/ServerDriver.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Service/LogService/LogController.java" afterPath="$PROJECT_DIR$/src/main/java/Service/LogService/LogController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Service/UnavailableController.java" afterPath="$PROJECT_DIR$/src/main/java/Service/UnavailableController.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/HTTPLogControllerTest.java" afterPath="$PROJECT_DIR$/src/test/java/HTTPLogControllerTest.java" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Channel/Channel.class" afterPath="$PROJECT_DIR$/target/classes/Channel/Channel.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Channel/HTTPChannel.class" afterPath="$PROJECT_DIR$/target/classes/Channel/HTTPChannel.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Channel/HTTPRouter.class" afterPath="$PROJECT_DIR$/target/classes/Channel/HTTPRouter.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Channel/Router.class" afterPath="$PROJECT_DIR$/target/classes/Channel/Router.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Constants/DummyLogStore.class" afterPath="$PROJECT_DIR$/target/classes/Constants/DummyLogStore.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CustomException/EmptyInputStreamException.class" afterPath="$PROJECT_DIR$/target/classes/CustomException/EmptyInputStreamException.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CustomException/InvalidRequestException.class" afterPath="$PROJECT_DIR$/target/classes/CustomException/InvalidRequestException.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CustomException/UnknownRequestTypeException.class" afterPath="$PROJECT_DIR$/target/classes/CustomException/UnknownRequestTypeException.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/JavaServerEntry.class" afterPath="$PROJECT_DIR$/target/classes/JavaServerEntry.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Model/Enum/HTTPRequestType.class" afterPath="$PROJECT_DIR$/target/classes/Model/Enum/HTTPRequestType.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Model/Enum/HTTPResponseStatus.class" afterPath="$PROJECT_DIR$/target/classes/Model/Enum/HTTPResponseStatus.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Model/Enum/RequestType.class" afterPath="$PROJECT_DIR$/target/classes/Model/Enum/RequestType.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Model/Enum/ResponseStatus.class" afterPath="$PROJECT_DIR$/target/classes/Model/Enum/ResponseStatus.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Model/HTTPRequest.class" afterPath="$PROJECT_DIR$/target/classes/Model/HTTPRequest.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Model/HTTPResponse.class" afterPath="$PROJECT_DIR$/target/classes/Model/HTTPResponse.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Model/Request.class" afterPath="$PROJECT_DIR$/target/classes/Model/Request.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Model/Response.class" afterPath="$PROJECT_DIR$/target/classes/Model/Response.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ServerDriver.class" afterPath="$PROJECT_DIR$/target/classes/ServerDriver.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Service/Controller.class" afterPath="$PROJECT_DIR$/target/classes/Service/Controller.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Service/LogService/GetLogService.class" afterPath="$PROJECT_DIR$/target/classes/Service/LogService/GetLogService.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Service/LogService/LogController$1.class" afterPath="$PROJECT_DIR$/target/classes/Service/LogService/LogController$1.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Service/LogService/LogController.class" afterPath="$PROJECT_DIR$/target/classes/Service/LogService/LogController.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Service/UnavailableController.class" afterPath="$PROJECT_DIR$/target/classes/Service/UnavailableController.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Worker/HTTPRequestParser.class" afterPath="$PROJECT_DIR$/target/classes/Worker/HTTPRequestParser.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Worker/HTTPResponseParser.class" afterPath="$PROJECT_DIR$/target/classes/Worker/HTTPResponseParser.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Worker/RequestParser.class" afterPath="$PROJECT_DIR$/target/classes/Worker/RequestParser.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Worker/ResponseParser.class" afterPath="$PROJECT_DIR$/target/classes/Worker/ResponseParser.class" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/HTTPChannelTest.txt" afterPath="$PROJECT_DIR$/target/surefire-reports/HTTPChannelTest.txt" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/HTTPLogControllerTest.txt" afterPath="$PROJECT_DIR$/target/surefire-reports/HTTPLogControllerTest.txt" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/HTTPRequestParserTest.txt" afterPath="$PROJECT_DIR$/target/surefire-reports/HTTPRequestParserTest.txt" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/HTTPResponseParserTest.txt" afterPath="$PROJECT_DIR$/target/surefire-reports/HTTPResponseParserTest.txt" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/HTTPRouterTest.txt" afterPath="$PROJECT_DIR$/target/surefire-reports/HTTPRouterTest.txt" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-HTTPChannelTest.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-HTTPChannelTest.xml" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-HTTPLogControllerTest.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-HTTPLogControllerTest.xml" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-HTTPRequestParserTest.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-HTTPRequestParserTest.xml" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-HTTPResponseParserTest.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-HTTPResponseParserTest.xml" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-HTTPRouterTest.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-HTTPRouterTest.xml" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/HTTPChannelTest.class" afterPath="$PROJECT_DIR$/target/test-classes/HTTPChannelTest.class" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/HTTPLogControllerTest.class" afterPath="$PROJECT_DIR$/target/test-classes/HTTPLogControllerTest.class" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/HTTPRequestParserTest.class" afterPath="$PROJECT_DIR$/target/test-classes/HTTPRequestParserTest.class" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/HTTPResponseParserTest.class" afterPath="$PROJECT_DIR$/target/test-classes/HTTPResponseParserTest.class" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/HTTPRouterTest.class" afterPath="$PROJECT_DIR$/target/test-classes/HTTPRouterTest.class" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Mocks/MockClientSocket.class" afterPath="$PROJECT_DIR$/target/test-classes/Mocks/MockClientSocket.class" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Mocks/MockInvalidClientSocket.class" afterPath="$PROJECT_DIR$/target/test-classes/Mocks/MockInvalidClientSocket.class" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Mocks/MockRequestFactory$1.class" afterPath="$PROJECT_DIR$/target/test-classes/Mocks/MockRequestFactory$1.class" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Mocks/MockRequestFactory.class" afterPath="$PROJECT_DIR$/target/test-classes/Mocks/MockRequestFactory.class" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Mocks/MockResponseFactory.class" afterPath="$PROJECT_DIR$/target/test-classes/Mocks/MockResponseFactory.class" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Mocks/MockSpyInvalidRequestParser.class" afterPath="$PROJECT_DIR$/target/test-classes/Mocks/MockSpyInvalidRequestParser.class" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Mocks/MockSpyValidRequestParser.class" afterPath="$PROJECT_DIR$/target/test-classes/Mocks/MockSpyValidRequestParser.class" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Mocks/MockSpyValidResponseParser.class" afterPath="$PROJECT_DIR$/target/test-classes/Mocks/MockSpyValidResponseParser.class" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Mocks/ValidChannel.class" afterPath="$PROJECT_DIR$/target/test-classes/Mocks/ValidChannel.class" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" afterPath="$PROJECT_DIR$/Dockerfile" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Channel/Channel.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Channel/HTTPChannel.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Channel/HTTPRouter.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Channel/Router.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Constants/DummyLogStore.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/CustomException/EmptyInputStreamException.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/CustomException/InvalidRequestException.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/CustomException/UnknownRequestTypeException.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/JavaServerEntry.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Model/Enum/HTTPRequestType.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Model/Enum/HTTPResponseStatus.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Model/Enum/RequestType.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Model/Enum/ResponseStatus.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Model/HTTPRequest.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Model/HTTPResponse.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Model/Request.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Model/Response.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ServerDriver.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Service/Controller.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Service/LogService/GetLogService.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Service/LogService/LogController$1.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Service/LogService/LogController.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Service/UnavailableController.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Worker/HTTPRequestParser.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Worker/HTTPResponseParser.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Worker/RequestParser.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Worker/ResponseParser.class" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -75,6 +41,11 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/JavaServerImproved$HTTPChannelTest_and_4_more.coverage" NAME="HTTPChannelTest and 4 more Coverage Results" MODIFIED="1522121162857" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/JavaServerImproved$HTTPLogControllerTest_return204WhenRequestIsValidWithQueryButNoLogMatchingID.coverage" NAME="HTTPLogControllerTest.return204WhenRequestIsValidWithQueryButNoLogMatchingID Coverage Results" MODIFIED="1522121049614" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/JavaServerImproved$JavaServerEntry.coverage" NAME="JavaServerEntry Coverage Results" MODIFIED="1522121094211" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
   <component name="FileEditorManager">
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
@@ -82,8 +53,8 @@
           <file leaf-file-name="LogController.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/Service/LogService/LogController.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="540">
-                  <caret line="74" column="45" lean-forward="true" selection-start-line="74" selection-start-column="45" selection-end-line="74" selection-end-column="45" />
+                <state relative-caret-position="960">
+                  <caret line="74" column="45" lean-forward="false" selection-start-line="74" selection-start-column="45" selection-end-line="74" selection-end-column="45" />
                   <folding />
                 </state>
               </provider>
@@ -92,32 +63,19 @@
           <file leaf-file-name="HTTPChannelTest.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/test/java/HTTPChannelTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="210">
-                  <caret line="29" column="61" lean-forward="false" selection-start-line="29" selection-start-column="61" selection-end-line="29" selection-end-column="61" />
+                <state relative-caret-position="544">
+                  <caret line="89" column="29" lean-forward="false" selection-start-line="29" selection-start-column="61" selection-end-line="89" selection-end-column="29" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="HTTPRequestParserTest.java" pinned="false" current-in-tab="false">
+          <file leaf-file-name="HTTPRequestParserTest.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/test/java/HTTPRequestParserTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1095">
-                  <caret line="89" column="0" lean-forward="false" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
+                <state relative-caret-position="383">
+                  <caret line="60" column="64" lean-forward="true" selection-start-line="60" selection-start-column="64" selection-end-line="60" selection-end-column="64" />
                   <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="ValidChannel.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/test/java/Mocks/ValidChannel.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="330">
-                  <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-                  <folding>
-                    <element signature="e#784#785#0" expanded="true" />
-                    <element signature="e#811#812#0" expanded="true" />
-                  </folding>
                 </state>
               </provider>
             </entry>
@@ -135,23 +93,13 @@
           <file leaf-file-name="ServerDriver.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/ServerDriver.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="480">
-                  <caret line="32" column="70" lean-forward="true" selection-start-line="32" selection-start-column="70" selection-end-line="32" selection-end-column="70" />
+                <state relative-caret-position="315">
+                  <caret line="32" column="70" lean-forward="false" selection-start-line="32" selection-start-column="70" selection-end-line="32" selection-end-column="70" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="e#374#375#0" expanded="true" />
                     <element signature="e#422#423#0" expanded="true" />
                   </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="HTTPRouterTest.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/test/java/HTTPRouterTest.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="105">
-                  <caret line="7" column="34" lean-forward="false" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
-                  <folding />
                 </state>
               </provider>
             </entry>
@@ -166,11 +114,33 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="HTTPRouter.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="HTTPRequestParser.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/Worker/HTTPRequestParser.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="508">
+                  <caret line="63" column="34" lean-forward="false" selection-start-line="63" selection-start-column="34" selection-end-line="63" selection-end-column="35" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="HTTPChannel.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/Channel/HTTPChannel.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="379">
+                  <caret line="35" column="14" lean-forward="true" selection-start-line="35" selection-start-column="14" selection-end-line="35" selection-end-column="14" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="HTTPRouter.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/Channel/HTTPRouter.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="540">
-                  <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+                <state relative-caret-position="510">
+                  <caret line="34" column="5" lean-forward="true" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="e#929#930#0" expanded="true" />
@@ -183,7 +153,7 @@
           <file leaf-file-name="GetLogService.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/Service/LogService/GetLogService.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="90">
+                <state relative-caret-position="60">
                   <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
                   <folding>
                     <element signature="imports" expanded="true" />
@@ -219,8 +189,18 @@
           <file leaf-file-name="Dockerfile" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Dockerfile">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="195">
-                  <caret line="13" column="8" lean-forward="true" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
+                <state relative-caret-position="150">
+                  <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/pom.xml">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="90">
+                  <caret line="6" column="41" lean-forward="false" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
                   <folding />
                 </state>
               </provider>
@@ -229,7 +209,7 @@
           <file leaf-file-name="MockRequestFactory.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/test/java/Mocks/MockRequestFactory.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="225">
+                <state relative-caret-position="585">
                   <caret line="46" column="51" lean-forward="false" selection-start-line="46" selection-start-column="51" selection-end-line="46" selection-end-column="51" />
                   <folding />
                 </state>
@@ -260,7 +240,7 @@
             <entry file="file://$PROJECT_DIR$/src/test/java/Mocks/MockSpyValidResponseParser.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="90">
-                  <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="13" selection-end-column="5" />
+                  <caret line="6" column="39" lean-forward="true" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -278,22 +258,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="HTTPRequestParser.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/Worker/HTTPRequestParser.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="421">
-                  <caret line="63" column="34" lean-forward="false" selection-start-line="63" selection-start-column="34" selection-end-line="63" selection-end-column="35" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="UnavailableController.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/Service/UnavailableController.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="525">
+                <state relative-caret-position="375">
                   <caret line="35" column="22" lean-forward="false" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
                   <folding>
                     <element signature="imports" expanded="true" />
@@ -384,9 +352,9 @@
         <option value="$PROJECT_DIR$/src/main/java/JavaServerEntry.java" />
         <option value="$PROJECT_DIR$/src/test/java/HTTPLogControllerTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/ServerDriver.java" />
-        <option value="$PROJECT_DIR$/Dockerfile" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/Service/UnavailableController.java" />
+        <option value="$PROJECT_DIR$/Dockerfile" />
       </list>
     </option>
   </component>
@@ -432,8 +400,8 @@
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="23" />
-    <option name="width" value="1920" />
-    <option name="height" value="1057" />
+    <option name="width" value="1680" />
+    <option name="height" value="1027" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -451,10 +419,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -558,6 +525,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -592,7 +560,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.HTTPLogControllerTest.return204WhenRequestIsValidWithQueryButNoLogMatchingID">
+  <component name="RunManager" selected="JUnit.HTTPChannelTest and 4 more">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -627,6 +595,32 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="" />
       <envs />
+    </configuration>
+    <configuration name="HTTPChannelTest and 4 more" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="JavaServerImproved" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="pattern" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns>
+        <pattern testClass="HTTPChannelTest" />
+        <pattern testClass="HTTPLogControllerTest" />
+        <pattern testClass="HTTPRequestParserTest" />
+        <pattern testClass="HTTPResponseParserTest" />
+        <pattern testClass="HTTPRouterTest" />
+      </patterns>
     </configuration>
     <configuration name="HTTPLogControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
@@ -676,26 +670,6 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="HTTPLogControllerTest" />
       <option name="METHOD_NAME" value="return204WhenRequestIsValidWithQueryButNoLogMatchingID" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="HTTPLogControllerTest.return400WhenRequestTypeIsNotSupported" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="JavaServerImproved" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="HTTPLogControllerTest" />
-      <option name="METHOD_NAME" value="return400WhenRequestTypeIsNotSupported" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -770,18 +744,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JUnit.HTTPLogControllerTest" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.HTTPLogControllerTest.return400WhenRequestTypeIsNotSupported" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.HTTPLogControllerTest.return204WhenRequestIsValidWithQueryButNoLogMatchingID" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.HTTPLogControllerTest.return200WhenRequestIsValidWithQueryAndIDMatches" />
-      <item index="4" class="java.lang.String" itemvalue="Application.JavaServerEntry" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.HTTPLogControllerTest.return204WhenRequestIsValidWithQueryButNoLogMatchingID" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.HTTPLogControllerTest.return200WhenRequestIsValidWithQueryAndIDMatches" />
+      <item index="3" class="java.lang.String" itemvalue="Application.JavaServerEntry" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.HTTPChannelTest and 4 more" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.HTTPLogControllerTest.return204WhenRequestIsValidWithQueryButNoLogMatchingID" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.HTTPChannelTest and 4 more" />
         <item index="1" class="java.lang.String" itemvalue="Application.JavaServerEntry" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.HTTPLogControllerTest.return200WhenRequestIsValidWithQueryAndIDMatches" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.HTTPLogControllerTest" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.HTTPLogControllerTest.return400WhenRequestTypeIsNotSupported" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.HTTPLogControllerTest.return204WhenRequestIsValidWithQueryButNoLogMatchingID" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.HTTPLogControllerTest.return200WhenRequestIsValidWithQueryAndIDMatches" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.HTTPLogControllerTest" />
       </list>
     </recent_temporary>
   </component>
@@ -802,7 +776,8 @@
       <workItem from="1521586075539" duration="19160000" />
       <workItem from="1521757012351" duration="18790000" />
       <workItem from="1522016350331" duration="15168000" />
-      <workItem from="1522039124215" duration="5657000" />
+      <workItem from="1522039124215" duration="6799000" />
+      <workItem from="1522102649040" duration="1801000" />
     </task>
     <task id="LOCAL-00001" summary="Finished with Channel and parsers with TDD">
       <created>1521526205853</created>
@@ -815,11 +790,8 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="HTTPLogControllerTest - 2018.03.26 at 13h 41m 00s.xml">
-      <configuration name="HTTPLogControllerTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="HTTPLogControllerTest - 2018.03.26 at 14h 17m 05s.xml">
-      <configuration name="HTTPLogControllerTest" configurationId="JUnit" />
+    <history-entry file="HTTPChannelTest_and_4_more - 2018.03.27 at 14h 26m 03s.xml">
+      <configuration name="HTTPChannelTest and 4 more" configurationId="JUnit" />
     </history-entry>
     <history-entry file="HTTPLogControllerTest - 2018.03.26 at 14h 17m 34s.xml">
       <configuration name="HTTPLogControllerTest" configurationId="JUnit" />
@@ -842,12 +814,15 @@
     <history-entry file="HTTPLogControllerTest_return204WhenRequestIsValidWithQueryButNoLogMatchingID - 2018.03.26 at 15h 30m 02s.xml">
       <configuration name="HTTPLogControllerTest.return204WhenRequestIsValidWithQueryButNoLogMatchingID" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="HTTPLogControllerTest_return204WhenRequestIsValidWithQueryButNoLogMatchingID - 2018.03.27 at 14h 24m 11s.xml">
+      <configuration name="HTTPLogControllerTest.return204WhenRequestIsValidWithQueryButNoLogMatchingID" configurationId="JUnit" />
+    </history-entry>
     <history-entry file="HTTPLogControllerTest_return400WhenRequestTypeIsNotSupported - 2018.03.26 at 13h 56m 49s.xml">
       <configuration name="HTTPLogControllerTest.return400WhenRequestTypeIsNotSupported" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="88197000" />
+    <option name="totallyTimeSpent" value="91140000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -859,35 +834,36 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="23" width="1680" height="1027" extended-state="6" />
+    <frame x="0" y="23" width="1680" height="1027" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952183" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952183" sideWeight="0.4978701" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952183" sideWeight="0.5042598" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.114774115" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21459228" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.114774115" sideWeight="0.49449036" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2972103" sideWeight="0.49574015" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22103004" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.114774115" sideWeight="0.5055096" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2962578" sideWeight="0.49574015" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1898657" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34012875" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1916972" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34012875" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1923077" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1923077" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952183" sideWeight="0.4978701" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952183" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -993,14 +969,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Worker/HTTPResponseParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="34" column="52" lean-forward="false" selection-start-line="34" selection-start-column="52" selection-end-line="34" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/HTTPRouterTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -1013,7 +981,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="32" lean-forward="false" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1031,21 +998,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Channel/HTTPChannel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="22" lean-forward="false" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Mocks/ValidChannel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
           <folding>
-            <element signature="e#784#785#0" expanded="true" />
-            <element signature="e#811#812#0" expanded="true" />
+            <element signature="e#784#785#0" expanded="false" />
+            <element signature="e#811#812#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1054,7 +1013,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="22" lean-forward="false" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1062,7 +1020,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="6" lean-forward="false" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1082,29 +1039,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/HTTPRequestParserTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1095">
-          <caret line="89" column="0" lean-forward="false" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Model/HTTPResponse.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
           <caret line="42" column="20" lean-forward="false" selection-start-line="42" selection-start-column="20" selection-end-line="42" selection-end-column="20" />
           <folding>
-            <element signature="e#600#601#0" expanded="true" />
-            <element signature="e#629#630#0" expanded="true" />
-            <element signature="e#678#679#0" expanded="true" />
-            <element signature="e#709#710#0" expanded="true" />
-            <element signature="e#773#774#0" expanded="true" />
-            <element signature="e#806#807#0" expanded="true" />
-            <element signature="e#876#877#0" expanded="true" />
-            <element signature="e#918#919#0" expanded="true" />
-            <element signature="e#963#964#0" expanded="true" />
-            <element signature="e#990#991#0" expanded="true" />
+            <element signature="e#600#601#0" expanded="false" />
+            <element signature="e#629#630#0" expanded="false" />
+            <element signature="e#678#679#0" expanded="false" />
+            <element signature="e#709#710#0" expanded="false" />
+            <element signature="e#773#774#0" expanded="false" />
+            <element signature="e#806#807#0" expanded="false" />
+            <element signature="e#876#877#0" expanded="false" />
+            <element signature="e#918#919#0" expanded="false" />
+            <element signature="e#963#964#0" expanded="false" />
+            <element signature="e#990#991#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1114,7 +1063,7 @@
         <state relative-caret-position="90">
           <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1123,14 +1072,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="16" column="32" lean-forward="false" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="40" lean-forward="false" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
           <folding />
         </state>
       </provider>
@@ -1148,10 +1089,10 @@
         <state relative-caret-position="270">
           <caret line="22" column="30" lean-forward="false" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
           <folding>
-            <element signature="e#782#783#0" expanded="true" />
-            <element signature="e#809#810#0" expanded="true" />
-            <element signature="e#1075#1076#0" expanded="true" />
-            <element signature="e#1117#1118#0" expanded="true" />
+            <element signature="e#782#783#0" expanded="false" />
+            <element signature="e#809#810#0" expanded="false" />
+            <element signature="e#1075#1076#0" expanded="false" />
+            <element signature="e#1117#1118#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1169,19 +1110,19 @@
         <state relative-caret-position="240">
           <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#736#737#0" expanded="true" />
-            <element signature="e#773#774#0" expanded="true" />
-            <element signature="e#822#823#0" expanded="true" />
-            <element signature="e#857#858#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#736#737#0" expanded="false" />
+            <element signature="e#773#774#0" expanded="false" />
+            <element signature="e#822#823#0" expanded="false" />
+            <element signature="e#857#858#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ServerDriver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="70" lean-forward="true" selection-start-line="32" selection-start-column="70" selection-end-line="32" selection-end-column="70" />
+        <state relative-caret-position="315">
+          <caret line="32" column="70" lean-forward="false" selection-start-line="32" selection-start-column="70" selection-end-line="32" selection-end-column="70" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#374#375#0" expanded="true" />
@@ -1190,61 +1131,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/HTTPChannelTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="29" column="61" lean-forward="false" selection-start-line="29" selection-start-column="61" selection-end-line="29" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/HTTPLogControllerTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="546">
           <caret line="58" column="40" lean-forward="false" selection-start-line="58" selection-start-column="40" selection-end-line="58" selection-end-column="40" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Service/LogService/LogController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="74" column="45" lean-forward="true" selection-start-line="74" selection-start-column="45" selection-end-line="74" selection-end-column="45" />
+        <state relative-caret-position="960">
+          <caret line="74" column="45" lean-forward="false" selection-start-line="74" selection-start-column="45" selection-end-line="74" selection-end-column="45" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Worker/HTTPRequestParser.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Service/LogService/GetLogService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
-          <caret line="63" column="34" lean-forward="false" selection-start-line="63" selection-start-column="34" selection-end-line="63" selection-end-column="35" />
+        <state relative-caret-position="60">
+          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Service/UnavailableController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="35" column="22" lean-forward="false" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#323#324#0" expanded="true" />
-            <element signature="e#380#381#0" expanded="true" />
-            <element signature="e#448#449#0" expanded="true" />
-            <element signature="e#485#486#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="8" lean-forward="true" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1264,9 +1175,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Mocks/MockRequestFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
+        <state relative-caret-position="585">
           <caret line="46" column="51" lean-forward="false" selection-start-line="46" selection-start-column="51" selection-end-line="46" selection-end-column="51" />
           <folding />
         </state>
@@ -1296,35 +1215,89 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Mocks/MockSpyValidResponseParser.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Service/UnavailableController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="13" selection-end-column="5" />
+        <state relative-caret-position="375">
+          <caret line="35" column="22" lean-forward="false" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Service/LogService/GetLogService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#323#324#0" expanded="true" />
+            <element signature="e#380#381#0" expanded="true" />
+            <element signature="e#448#449#0" expanded="true" />
+            <element signature="e#485#486#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Channel/HTTPRouter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+        <state relative-caret-position="510">
+          <caret line="34" column="5" lean-forward="true" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#929#930#0" expanded="true" />
             <element signature="e#976#977#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Worker/HTTPResponseParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="34" column="52" lean-forward="false" selection-start-line="34" selection-start-column="52" selection-end-line="34" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Worker/HTTPRequestParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="508">
+          <caret line="63" column="34" lean-forward="false" selection-start-line="63" selection-start-column="34" selection-end-line="63" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Channel/HTTPChannel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="35" column="14" lean-forward="true" selection-start-line="35" selection-start-column="14" selection-end-line="35" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="41" lean-forward="false" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Mocks/MockSpyValidResponseParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="39" lean-forward="true" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/HTTPChannelTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="89" column="29" lean-forward="false" selection-start-line="29" selection-start-column="61" selection-end-line="89" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/HTTPRequestParserTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="383">
+          <caret line="60" column="64" lean-forward="true" selection-start-line="60" selection-start-column="64" selection-end-line="60" selection-end-column="64" />
+          <folding />
         </state>
       </provider>
     </entry>

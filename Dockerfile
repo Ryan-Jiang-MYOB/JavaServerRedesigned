@@ -11,4 +11,4 @@ RUN mvn test
 
 RUN mvn package
 
-CMD java
+CMD java -jar target/JavaServer.jar
