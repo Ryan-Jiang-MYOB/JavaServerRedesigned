@@ -2,33 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4e2ed837-b8d5-4829-bcb9-e5ab2c703c8f" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.travis.yml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/target/JavaServer.jar" afterPath="$PROJECT_DIR$/target/JavaServer.jar" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Channel/HTTPChannel.class" afterPath="$PROJECT_DIR$/target/classes/Channel/HTTPChannel.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/JavaServerEntry.class" afterPath="$PROJECT_DIR$/target/classes/JavaServerEntry.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ServerDriver.class" afterPath="$PROJECT_DIR$/target/classes/ServerDriver.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Service/LogService/LogController$1.class" afterPath="$PROJECT_DIR$/target/classes/Service/LogService/LogController$1.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Service/LogService/LogController.class" afterPath="$PROJECT_DIR$/target/classes/Service/LogService/LogController.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Worker/HTTPRequestParser.class" afterPath="$PROJECT_DIR$/target/classes/Worker/HTTPRequestParser.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Worker/HTTPResponseParser.class" afterPath="$PROJECT_DIR$/target/classes/Worker/HTTPResponseParser.class" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/HTTPChannelTest.txt" afterPath="$PROJECT_DIR$/target/surefire-reports/HTTPChannelTest.txt" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/HTTPLogControllerTest.txt" afterPath="$PROJECT_DIR$/target/surefire-reports/HTTPLogControllerTest.txt" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/HTTPRequestParserTest.txt" afterPath="$PROJECT_DIR$/target/surefire-reports/HTTPRequestParserTest.txt" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/HTTPResponseParserTest.txt" afterPath="$PROJECT_DIR$/target/surefire-reports/HTTPResponseParserTest.txt" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/HTTPRouterTest.txt" afterPath="$PROJECT_DIR$/target/surefire-reports/HTTPRouterTest.txt" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-HTTPChannelTest.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-HTTPChannelTest.xml" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-HTTPLogControllerTest.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-HTTPLogControllerTest.xml" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-HTTPRequestParserTest.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-HTTPRequestParserTest.xml" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-HTTPResponseParserTest.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-HTTPResponseParserTest.xml" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/HTTPChannelTest.class" afterPath="$PROJECT_DIR$/target/test-classes/HTTPChannelTest.class" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/HTTPRequestParserTest.class" afterPath="$PROJECT_DIR$/target/test-classes/HTTPRequestParserTest.class" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/HTTPResponseParserTest.class" afterPath="$PROJECT_DIR$/target/test-classes/HTTPResponseParserTest.class" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Mocks/MockRequestFactory$1.class" afterPath="$PROJECT_DIR$/target/test-classes/Mocks/MockRequestFactory$1.class" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Mocks/MockRequestFactory.class" afterPath="$PROJECT_DIR$/target/test-classes/Mocks/MockRequestFactory.class" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Mocks/MockSpyValidRequestParser.class" afterPath="$PROJECT_DIR$/target/test-classes/Mocks/MockSpyValidRequestParser.class" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Mocks/ValidChannel.class" afterPath="$PROJECT_DIR$/target/test-classes/Mocks/ValidChannel.class" />
+      <change beforePath="$PROJECT_DIR$/.travis.yml" afterPath="$PROJECT_DIR$/.travis.yml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -194,31 +169,31 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name=".travis.yml" pinned="false" current-in-tab="false">
+          <file leaf-file-name=".travis.yml" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/.travis.yml">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="135">
-                  <caret line="9" column="12" lean-forward="false" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+                <state relative-caret-position="180">
+                  <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+          <file leaf-file-name="JavaServerEntry.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/JavaServerEntry.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="270">
+                  <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/.gitignore">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="0">
                   <caret line="0" column="7" lean-forward="true" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="MockSpyInvalidRequestParser.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/test/java/Mocks/MockSpyInvalidRequestParser.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="135">
-                  <caret line="14" column="84" lean-forward="false" selection-start-line="14" selection-start-column="84" selection-end-line="14" selection-end-column="84" />
                   <folding />
                 </state>
               </provider>
@@ -354,8 +329,8 @@
         <option value="$PROJECT_DIR$/Dockerfile" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/Jenkinsfile" />
-        <option value="$PROJECT_DIR$/.travis.yml" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/.travis.yml" />
       </list>
     </option>
   </component>
@@ -428,6 +403,85 @@
             <path>
               <item name="JavaServerImproved" type="b2602c69:ProjectViewProjectNode" />
               <item name="JavaServerImproved" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaServerImproved" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaServerImproved" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaServerImproved" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaServerImproved" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaServerImproved" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaServerImproved" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaServerImproved" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaServerImproved" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Channel" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaServerImproved" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaServerImproved" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Constants" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaServerImproved" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaServerImproved" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="CustomException" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaServerImproved" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaServerImproved" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaServerImproved" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaServerImproved" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaServerImproved" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaServerImproved" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Worker" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaServerImproved" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaServerImproved" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaServerImproved" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaServerImproved" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JavaServerImproved" type="b2602c69:ProjectViewProjectNode" />
@@ -691,7 +745,7 @@
       <workItem from="1522016350331" duration="15168000" />
       <workItem from="1522039124215" duration="6799000" />
       <workItem from="1522102649040" duration="2531000" />
-      <workItem from="1522731474155" duration="4751000" />
+      <workItem from="1522731474155" duration="8470000" />
     </task>
     <task id="LOCAL-00001" summary="Finished with Channel and parsers with TDD">
       <created>1521526205853</created>
@@ -736,7 +790,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="96621000" />
+    <option name="totallyTimeSpent" value="100340000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -938,14 +992,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="16" column="32" lean-forward="false" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/JavaServerEntry.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="10" column="51" lean-forward="false" selection-start-line="10" selection-start-column="51" selection-end-line="10" selection-end-column="51" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1169,18 +1215,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.travis.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="12" lean-forward="false" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="7" lean-forward="true" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/JavaServerEntry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.travis.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding />
         </state>
       </provider>
