@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4e2ed837-b8d5-4829-bcb9-e5ab2c703c8f" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/appspec.yml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/JavaServerEntry.java" afterPath="$PROJECT_DIR$/src/main/java/JavaServerEntry.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -179,11 +179,21 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="JavaServerEntry.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="JavaServerEntry.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/JavaServerEntry.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="90">
                   <caret line="8" column="61" lean-forward="false" selection-start-line="8" selection-start-column="61" selection-end-line="8" selection-end-column="61" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="appspec.yml" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/appspec.yml">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="45">
+                  <caret line="3" column="14" lean-forward="true" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
                   <folding />
                 </state>
               </provider>
@@ -195,18 +205,6 @@
                 <state relative-caret-position="0">
                   <caret line="0" column="7" lean-forward="true" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
                   <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="MockSpyValidResponseParser.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/test/java/Mocks/MockSpyValidResponseParser.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="75">
-                  <caret line="6" column="39" lean-forward="false" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
                 </state>
               </provider>
             </entry>
@@ -280,7 +278,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/Mocks/MockValidRequestParser.java" />
         <option value="$PROJECT_DIR$/src/test/java/Mocks/MockSpyInvalidRequestParser.java" />
         <option value="$PROJECT_DIR$/src/test/java/RequestChannelTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/Mocks/MockClientSocket.java" />
@@ -331,6 +328,7 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/.travis.yml" />
         <option value="$PROJECT_DIR$/src/main/java/JavaServerEntry.java" />
+        <option value="$PROJECT_DIR$/appspec.yml" />
       </list>
     </option>
   </component>
@@ -745,7 +743,7 @@
       <workItem from="1522016350331" duration="15168000" />
       <workItem from="1522039124215" duration="6799000" />
       <workItem from="1522102649040" duration="2531000" />
-      <workItem from="1522731474155" duration="11365000" />
+      <workItem from="1522731474155" duration="11705000" />
     </task>
     <task id="LOCAL-00001" summary="Finished with Channel and parsers with TDD">
       <created>1521526205853</created>
@@ -790,7 +788,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="103235000" />
+    <option name="totallyTimeSpent" value="103575000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -811,7 +809,7 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952183" sideWeight="0.5042598" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.114774115" sideWeight="0.49449036" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.114774115" sideWeight="0.49449036" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22103004" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29613733" sideWeight="0.49574015" order="9" side_tool="false" content_ui="tabs" />
@@ -882,7 +880,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/Mocks/MockSpyInvalidResponseParser.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/Server/Service.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/Service/LogService/LogService.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/Service/SiteController.java" />
@@ -1235,6 +1232,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="8" column="61" lean-forward="false" selection-start-line="8" selection-start-column="61" selection-end-line="8" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/appspec.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="14" lean-forward="true" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
           <folding />
         </state>
       </provider>
