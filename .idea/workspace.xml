@@ -172,8 +172,8 @@
           <file leaf-file-name=".travis.yml" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/.travis.yml">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="540">
-                  <caret line="36" column="29" lean-forward="false" selection-start-line="36" selection-start-column="29" selection-end-line="36" selection-end-column="29" />
+                <state relative-caret-position="369">
+                  <caret line="31" column="1" lean-forward="false" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
                   <folding />
                 </state>
               </provider>
@@ -745,7 +745,7 @@
       <workItem from="1522016350331" duration="15168000" />
       <workItem from="1522039124215" duration="6799000" />
       <workItem from="1522102649040" duration="2531000" />
-      <workItem from="1522731474155" duration="10695000" />
+      <workItem from="1522731474155" duration="10898000" />
     </task>
     <task id="LOCAL-00001" summary="Finished with Channel and parsers with TDD">
       <created>1521526205853</created>
@@ -790,7 +790,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="102565000" />
+    <option name="totallyTimeSpent" value="102768000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1233,8 +1233,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.travis.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="36" column="29" lean-forward="false" selection-start-line="36" selection-start-column="29" selection-end-line="36" selection-end-column="29" />
+        <state relative-caret-position="369">
+          <caret line="31" column="1" lean-forward="false" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
           <folding />
         </state>
       </provider>
