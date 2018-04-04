@@ -1,5 +1,5 @@
 version: 0.9
 os: linux
 files:
-  - source: ./
-    destination: /home/JavaServer/
+  - source: ./target/
+    destination: /home/ec2-user/JavaServer/
