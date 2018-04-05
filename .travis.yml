@@ -7,8 +7,7 @@ script:
 - mvn clean
 - mvn test
 - mvn package
-- mv appspec.yml target/appspec.yml
-- zip -r server target/
+- zip -r server start.sh appspec.yml target/JavaServer.jar
 - mkdir -p travis_cd_upload
 - mv server.zip travis_cd_upload/server.zip
 
