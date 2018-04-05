@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-java -jar JavaServer.jar
+java -jar target/JavaServer.jar
