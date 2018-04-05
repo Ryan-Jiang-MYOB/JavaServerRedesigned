@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-java -jar target/JavaServer.jar
+java -jar JavaServer/target/JavaServer.jar 8100
