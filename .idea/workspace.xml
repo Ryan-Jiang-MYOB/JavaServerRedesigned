@@ -3,11 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="4e2ed837-b8d5-4829-bcb9-e5ab2c703c8f" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Channel/Channel.java" afterPath="$PROJECT_DIR$/src/main/java/Channel/Channel.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Channel/HTTPChannel.java" afterPath="$PROJECT_DIR$/src/main/java/Channel/HTTPChannel.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ServerDriver.java" afterPath="$PROJECT_DIR$/src/main/java/ServerDriver.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Worker/HTTPRequestParser.java" afterPath="$PROJECT_DIR$/src/main/java/Worker/HTTPRequestParser.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Mocks/ValidChannel.java" afterPath="$PROJECT_DIR$/src/test/java/Mocks/ValidChannel.java" />
       <change beforePath="$PROJECT_DIR$/start.sh" afterPath="$PROJECT_DIR$/start.sh" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -181,7 +176,7 @@
             <entry file="file://$PROJECT_DIR$/start.sh">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="15">
-                  <caret line="1" column="12" lean-forward="false" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+                  <caret line="1" column="62" lean-forward="true" selection-start-line="1" selection-start-column="62" selection-end-line="1" selection-end-column="62" />
                   <folding />
                 </state>
               </provider>
@@ -765,7 +760,7 @@
       <workItem from="1522731474155" duration="13476000" />
       <workItem from="1522884299587" duration="2888000" />
       <workItem from="1522888418985" duration="1554000" />
-      <workItem from="1522890711593" duration="6173000" />
+      <workItem from="1522890711593" duration="6496000" />
     </task>
     <task id="LOCAL-00001" summary="Finished with Channel and parsers with TDD">
       <created>1521526205853</created>
@@ -810,7 +805,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="115961000" />
+    <option name="totallyTimeSpent" value="116284000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1265,7 +1260,7 @@
     <entry file="file://$PROJECT_DIR$/start.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
-          <caret line="1" column="12" lean-forward="false" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+          <caret line="1" column="62" lean-forward="true" selection-start-line="1" selection-start-column="62" selection-end-line="1" selection-end-column="62" />
           <folding />
         </state>
       </provider>
