@@ -23,12 +23,11 @@ public class ServerDriver implements Runnable {
             Request request;
 
             try {
+                Router router = new HTTPRouter();
                 request = channel.fetch();
                 if (request == null) {
                     return;
                 }
-
-                Router router = new HTTPRouter();
                 Controller controller = router.routeToController(request);
                 Response response = controller.handleRequest(request);
                 channel.send(response);

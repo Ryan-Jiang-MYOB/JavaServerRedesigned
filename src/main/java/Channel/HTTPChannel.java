@@ -6,10 +6,7 @@ import Model.Response;
 import Worker.RequestParser;
 import Worker.ResponseParser;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.OutputStream;
+import java.io.*;
 import java.net.Socket;
 
 public class HTTPChannel implements Channel {
@@ -24,7 +21,7 @@ public class HTTPChannel implements Channel {
     }
 
     public Request fetch() throws IOException {
-        BufferedReader _reader = new BufferedReader(new InputStreamReader(_clientSocket.getInputStream()));
+        BufferedReader _reader = new BufferedReader(new InputStreamReader(new DataInputStream(_clientSocket.getInputStream())));
         try {
             return _requestParser.parseRequest(_reader);
         } catch (InvalidRequestException e) {
