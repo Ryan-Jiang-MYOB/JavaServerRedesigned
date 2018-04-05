@@ -20,23 +20,19 @@ public class HTTPRequestParser implements RequestParser {
 
     @Override
     public Request parseRequest(BufferedReader reader) throws IOException, InvalidRequestException {
-        if (reader.ready()) {
-            String [] requestFields = readRequestLine(reader, REQUEST_LINE_LENGTH);
-            String requestPath = requestFields[1];
+        String [] requestFields = readRequestLine(reader, REQUEST_LINE_LENGTH);
+        String requestPath = requestFields[1];
 
-            RequestType requestType = parseRequestType(requestFields[0]);
-            Map<String, String> headers = readRequestHeaders(reader);
-            URI requestURI = parseRequestURI(requestPath);
-            String body = readRequestBody(reader, headers);
+        RequestType requestType = parseRequestType(requestFields[0]);
+        Map<String, String> headers = readRequestHeaders(reader);
+        URI requestURI = parseRequestURI(requestPath);
+        String body = readRequestBody(reader, headers);
 
-            //Optional Query
-            Map<String, String> queriesMap = parseRequestQuery(requestPath);
-            Request request = new HTTPRequest(requestType, requestURI, requestFields[2], headers, body, queriesMap);
+        //Optional Query
+        Map<String, String> queriesMap = parseRequestQuery(requestPath);
+        Request request = new HTTPRequest(requestType, requestURI, requestFields[2], headers, body, queriesMap);
 
-            return request;
-        } else {
-            throw new InvalidRequestException("Empty InputStream");
-        }
+        return request;
     }
 
     private RequestType parseRequestType(String rawType) throws UnknownRequestTypeException {

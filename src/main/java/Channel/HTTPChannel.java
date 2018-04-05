@@ -43,4 +43,14 @@ public class HTTPChannel implements Channel {
             return false;
         }
     }
+
+    public boolean isAvailable() {
+        try {
+            InputStream stream = _clientSocket.getInputStream();
+            return stream.available() > 0;
+        } catch (IOException e) {
+            e.printStackTrace();
+            return false;
+        }
+    }
 }

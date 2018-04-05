@@ -21,27 +21,31 @@ public class ServerDriver implements Runnable {
         if (clientSocket.isConnected()) {
             Channel channel = new HTTPChannel(clientSocket, new HTTPRequestParser(), new HTTPResponseParser());
             Request request;
-
             try {
+                Thread.currentThread().sleep(100);
                 Router router = new HTTPRouter();
-                request = channel.fetch();
-                if (request == null) {
+                if (!channel.isAvailable()) {
                     return;
                 }
+                request = channel.fetch();
                 Controller controller = router.routeToController(request);
                 Response response = controller.handleRequest(request);
                 channel.send(response);
 
-            } catch (URISyntaxException | IOException e) {
+            } catch (URISyntaxException | InterruptedException | IOException e) {
                 e.printStackTrace();
             } finally {
-                try {
-                    clientSocket.close();
-                } catch (IOException e) {
-                    System.err.println("Couldn't Close Socket Connection");
-                    e.printStackTrace();
-                }
+                closeClientSocket();
             }
+        }
+    }
+
+    private void closeClientSocket() {
+        try {
+            clientSocket.close();
+        } catch (IOException e) {
+            System.err.println("Couldn't Close Socket Connection");
+            e.printStackTrace();
         }
     }
 }

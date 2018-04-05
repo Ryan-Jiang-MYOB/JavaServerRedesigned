@@ -11,4 +11,5 @@ import java.io.IOException;
 public interface Channel {
     Request fetch() throws IOException;
     boolean send(Response response);
+    boolean isAvailable();
 }

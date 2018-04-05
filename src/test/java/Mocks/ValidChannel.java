@@ -30,4 +30,9 @@ public class ValidChannel implements Channel {
     public boolean send(Response response) {
         return true;
     }
+
+    @Override
+    public boolean isAvailable() {
+        return true;
+    }
 }
