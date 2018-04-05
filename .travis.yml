@@ -11,23 +11,6 @@ script:
 - mkdir -p travis_cd_upload
 - mv server.zip travis_cd_upload/server.zip
 
-#deploy:
-#- provider: s3
-#  access_key_id: $AWS_ACCESS_KEY
-#  secret_access_key: $AWS_SECRET_KEY
-#  bucket: "fma-ryanj-cd"
-#  local_dir: travis_cd_upload
-#  acl: public_read
-#- provider: codedeploy
-#  access_key_id: $AWS_ACCESS_KEY
-#  secret_access_key: $AWS_SECRET_KEY
-#  bucket: "fma-ryanj-cd"
-#  key: server.zip
-#  bundle_type: zip
-#  application: JavaWebServer
-#  deployment_group: WebServerDeployment
-#  region: ap-southeast-2
-
 deploy:
 - provider: s3
   access_key_id: $AWS_ACCESS_KEY
