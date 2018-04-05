@@ -3,3 +3,8 @@ os: linux
 files:
   - source: ./
     destination: /home/ec2-user/JavaServer/
+
+hooks:
+  ApplicationStart:
+    - location: start.sh
+      timeout: 3600
