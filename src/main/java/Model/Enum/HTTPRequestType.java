@@ -6,7 +6,7 @@ public enum HTTPRequestType implements RequestType {
     PUT ("PUT"),
     DELETE ("DELETE"),
     HEAD ("HEAD"),
-    OPTIONS ("OPTION")
+    OPTIONS ("OPTIONS")
     ;
 
     private final String requestCode;

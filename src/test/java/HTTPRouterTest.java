@@ -3,9 +3,9 @@ import Channel.Router;
 import Mocks.MockRequestFactory;
 import Model.Enum.HTTPRequestType;
 import Model.Request;
-import Service.Controller;
-import Service.LogService.LogController;
-import Service.UnavailableController;
+import Service.EmptyOkResponseRequestHandler;
+import Service.RequestHandler;
+import Service.LogService.LogRequestHandler;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -20,28 +20,28 @@ public class HTTPRouterTest {
     @Before
     public void setup () throws URISyntaxException {
         router = new HTTPRouter();
-        router.mapController(new URI("/log"), new LogController());
+        router.mapHandler(new URI("/log"), new LogRequestHandler());
         requestFactory = new MockRequestFactory();
     }
 
     @Test
     public void routerFunctionShouldReturnNotNull() {
         Request request = requestFactory.getValidRequest(HTTPRequestType.POST, requestFactory.validLogURI);
-        Controller routingResult = router.routeToController(request);
+        RequestHandler routingResult = router.routeToController(request);
         Assert.assertNotNull(routingResult);
     }
 
     @Test
     public void routerShouldReturnUnavailableControllerWhenNoServiceAvailable() {
         Request request = requestFactory.getPostRequestWithUnavailableURI();
-        Controller routingResult = router.routeToController(request);
-        Assert.assertTrue(routingResult instanceof UnavailableController);
+        RequestHandler routingResult = router.routeToController(request);
+        Assert.assertTrue(routingResult instanceof EmptyOkResponseRequestHandler);
     }
 
     @Test
     public void routerShouldReturnCorrectControllerWhenAvailable() {
         Request request = requestFactory.getValidRequest(HTTPRequestType.GET, requestFactory.validLogURI);
-        Controller routingResult = router.routeToController(request);
-        Assert.assertTrue(routingResult instanceof LogController);
+        RequestHandler routingResult = router.routeToController(request);
+        Assert.assertTrue(routingResult instanceof LogRequestHandler);
     }
 }

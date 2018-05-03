@@ -4,16 +4,16 @@ import Model.Enum.HTTPRequestType;
 import Model.Enum.HTTPResponseStatus;
 import Model.Request;
 import Model.Response;
-import Service.Controller;
+import Service.RequestHandler;
 import Worker.HTTPResponseParser;
 import Worker.ResponseParser;
 
 import java.util.HashMap;
 
-public class LogController implements Controller {
+public class LogRequestHandler implements RequestHandler {
     ResponseParser responseParser;
 
-    public LogController() {
+    public LogRequestHandler() {
         responseParser = new HTTPResponseParser();
     }
 

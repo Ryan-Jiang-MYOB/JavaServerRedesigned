@@ -1,11 +1,11 @@
 package Channel;
 
 import Model.Request;
-import Service.Controller;
+import Service.RequestHandler;
 
 import java.net.URI;
 
 public interface Router {
-    Controller routeToController(Request request);
-    void mapController(URI uri, Controller controller);
+    RequestHandler routeToController(Request request);
+    void mapHandler(URI uri, RequestHandler requestHandler);
 }

@@ -8,10 +8,10 @@ import Worker.ResponseParser;
 
 import java.util.HashMap;
 
-public class UnavailableController implements Controller {
+public class UnavailableRequestHandler implements RequestHandler {
     ResponseParser responseParser;
 
-    public UnavailableController() {
+    public UnavailableRequestHandler() {
         responseParser = new HTTPResponseParser();
     }
 

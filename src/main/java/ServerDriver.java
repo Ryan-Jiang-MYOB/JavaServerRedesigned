@@ -1,7 +1,7 @@
 import Channel.*;
 import Model.Request;
 import Model.Response;
-import Service.Controller;
+import Service.RequestHandler;
 import Worker.HTTPRequestParser;
 import Worker.HTTPResponseParser;
 
@@ -22,14 +22,14 @@ public class ServerDriver implements Runnable {
             Channel channel = new HTTPChannel(clientSocket, new HTTPRequestParser(), new HTTPResponseParser());
             Request request;
             try {
-                Thread.currentThread().sleep(100);
+                Thread.currentThread().sleep(100); // Postman stuff hack.
                 Router router = new HTTPRouter();
                 if (!channel.isAvailable()) {
                     return;
                 }
                 request = channel.fetch();
-                Controller controller = router.routeToController(request);
-                Response response = controller.handleRequest(request);
+                RequestHandler requestHandler = router.routeToController(request);
+                Response response = requestHandler.handleRequest(request);
                 channel.send(response);
 
             } catch (URISyntaxException | InterruptedException | IOException e) {
