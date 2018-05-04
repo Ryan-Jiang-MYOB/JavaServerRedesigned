@@ -9,13 +9,12 @@ import java.io.IOException;
 import java.net.Socket;
 import java.net.URISyntaxException;
 
-public class ServerDriver implements Runnable {
+ class ServerDriver implements Runnable {
     private Socket clientSocket;
 
     public ServerDriver(Socket clientSocket) {
         this.clientSocket = clientSocket;
     }
-
     @Override
     public synchronized void run() {
         if (clientSocket.isConnected()) {
